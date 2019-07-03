@@ -1,0 +1,311 @@
+/* Fonts */
+h1{
+	font-family: 'Modak', cursive;
+	font-size: 50px;
+}
+h2{
+	font-family: 'Rum Raisin', sans-serif;
+
+}
+h3{
+	font-family: 'Arima Madurai', cursive;
+
+}
+h4{
+	font-family: 'Coiny', cursive;
+}
+h5{
+	font-family: 'Handlee', cursive;
+
+}
+h6{
+	font-family: 'Roboto', sans-serif;
+}
+p{
+	font-family: 'Playfair Display', serif;
+	font-family: 'Chathura', sans-serif;
+
+}
+/* button */
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: center;
+	border-radius: 10px;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.red
+{
+	background-color: #B70000;
+	border-bottom: 5px solid #FF0000;
+	text-shadow: 0px -2px #FF0000;
+}
+
+/* Fonts End */
+
+html {
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+}
+  body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+ /* card */
+ .skill-card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+			transform: translateY(-50%) translateX(-50%);
+	padding: 20px;
+	width: 15em;
+	background-color: #FFF;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+  }
+  .skill-card:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .skill-card:hover .skill-card__header {
+	height: 40px;
+  }
+  .skill-card:hover .skill-card__header .skill-card__icon {
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(3);
+			transform: translateX(-50%) translateY(-50%) scale(3);
+  }
+  .skill-card:hover .skill-card__body {
+	height: 170px;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li {
+	-webkit-transform: translateX(0);
+			transform: translateX(0);
+	transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+	transition-duration: 0.5s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
+	transition-delay: 0.25s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2) {
+	transition-delay: 0.5s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
+	transition-delay: 0.75s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
+	transition-delay: 1s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5) {
+	transition-delay: 1.25s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
+	transition-delay: 1.5s;
+  }
+  .skill-card .skill-card__header {
+	position: relative;
+	background-color: #eb6c3f;
+	height: 170px;
+	margin: -20px -20px -15px -20px;
+	transition: height 0.5s;
+	overflow: hidden;
+  }
+  .skill-card .skill-card__header .skill-card__icon {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+			transform: translateY(-50%) translateX(-50%);
+	display: block;
+	width: 128px;
+	height: 128px;
+	transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .skill-card .skill-card__body {
+	height: 40px;
+	transition: height 0.5s;
+	overflow: hidden;
+	text-align: center;
+	
+  }
+  .skill-card .skill-card__body .skill-card__title {
+	font-size: 1.4em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:#000000;
+
+  }
+  .skill-card .skill-card__body .skill-card__duration {
+	color: #9E9E9E;
+	font-style: italic;
+  }
+  .skill-card .skill-card__body .skill-card__knowledge {
+	margin-top: 10px;
+	color: #424242;
+  }
+  .skill-card .skill-card__body .skill-card__knowledge li {
+	margin-top: 5px;
+	transition-duration: 0;
+	transition-delay: 0.5s;
+	-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+  }
+  /*  */
+  .back{
+	background-color:rgba(0,0,0,0.3);
+	width:100%;
+	height:100%;
+	}
+	#mini{
+	position: relative;
+	  right: 0;
+	  bottom: 0;
+	  min-width: 100%; 
+		min-height: 200px;
+		max-height: 200px;
+		z-index: 2;
+	}
+	#video{
+		position: relative;
+	  right: 0;
+	  bottom: 0;
+	  min-width: 100%; 
+		min-height: 100%;
+		max-height: 300px;
+		z-index: 2;
+	}
+	/* ParticleNav */
+.particle-network-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+}
+.particle-network-animation::before {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.025), rgba(0, 0, 0, 0));
+}
+
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  animation: glow-1-move 25s linear infinite both;
+}
+
+@keyframes glow-1-move {
+  from {
+    transform: translate(-100%, 100%);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  animation: glow-2-move 25s linear 8.33333s infinite both;
+}
+
+@keyframes glow-2-move {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  animation: glow-3-move 25s linear 16.66667s infinite both;
+}
+
+@keyframes glow-3-move {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(0%, -100%);
+  }
+}
+/*End ParticleNav*/
+
+/* scroll */
+
+
+/* Pic Icons */
+
+.circular {
+  /* display items as block elements, inline positioning */
+  display: inline-block;
+  /* set the height of the image */
+  height: 50px;
+  /* hide the link text */
+  text-indent: -9999px;
+  /* set the width of the image */
+  width: 50px;
+  /* use a radius to make the image into a circular shape */
+  border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+  /* Add shadow to the box */
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+/* simple hover effect */
+a.circular { 
+  opacity: .6; 
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out; /* Safari */
+}
+
+a.circular:hover { opacity: 1; }
+.btn-about {
+  background: url("https://yt3.ggpht.com/a-/AAuE7mDO-43W_nIXPK9mE0A3--EugtEfj-0EQNljfw=s900-mo-c-c0xffffffff-rj-k-no") no-repeat;
+}
