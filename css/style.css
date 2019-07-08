@@ -87,16 +87,16 @@ body,
   height: 100%;
 }
 .item:nth-child(1) {
-  background: #ff3322;
+  background: #b3d98d;
 }
 .item:nth-child(2) {
-  background: #44c7f4;
+  background: #67b31b;
 }
 .item:nth-child(3) {
-  background: #6e2585;
+  background:#3d6b10;
 }
 .item:nth-child(4) {
-  background: #ffcd00;
+  background: #1e3508;
 }
 
 /*  */
