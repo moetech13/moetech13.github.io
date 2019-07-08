@@ -1,25 +1,28 @@
-
 <!Doctype html>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes"> -->
+    <meta name = "viewport" content = "user-scalable=no, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript, Mouminatou, Barry,Leader">
     <meta name="author" content="Mouminatou Barry">
   <title>MOe Techtainment</title>
     <!--Icon-->
-    <link style="" rel="icon" type="image/png" href="images/TransLogo.png">
+    <link style="background-color: #ffc600;" rel="icon" type="image/png" href="images/TransLogo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Chathura|Coiny|Handlee|Modak|Playfair+Display|Roboto|Rum+Raisin" rel="stylesheet">
-    <!-- script -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>     
+    <style>
  h1{
 	font-family: 'Modak', cursive;
 	font-size: 50px;
@@ -28,22 +31,26 @@
 	font-family: 'Rum Raisin', sans-serif;
 
   }
-
+  /* carousel */
   </style>
 </head>
 <div class="particle-network-animation" ></div>
 <body style="background-color: #67b31b;">
+
 <div class=" container col-md-12">
 <!-- Header -->
-<div style="text-align:center;" ><img src="images/moerelative.png" height="150px"> </div>
+<div style="text-align:center;"> <img src="images/moerelative.png" height="150px"> </div>
 
 
   <div style="height:160px;"></div>
   <div class="col-md-12" style="text-align: center;" >
         <div class="skill-card">
-          <header class="skill-card__header" style="background-color: #67b31b;"><img class="skill-card__icon" src="images/s.png" alt="HTML5 Logo"/></header>
+          <header class="skill-card__header" style="background-color: #67b31b;">
+            <video class="skill-card__icon" id="video" autoplay muted loop  alt="what is Relativity" src="images/reality.MOV"></video>  
+
+          </header>
           <section class="skill-card__body">
-            <h2 class="skill-card__title">Moe Techtainment</h2><span class="skill-card__duration">6 ans d'expérience</span>
+            <h2 class="skill-card__title">Relative Reality</h2><span class="skill-card__duration">What are some reltionships of the world have you noticed?</span>
             
             <ul class="skill-card__knowledge">
               <li> <a href="#" class="action-button shadow animate red">Hello</a></li>
@@ -53,21 +60,51 @@
       </div>
 
 
-<div style="height:400px;"></div>
+<div style="height:100px;"></div>
 <div class="col-md-12" style="text-align:center;"> 
-       
+    
     <h2 style="color:#000000;">Let her explore the unknown she discover new meanings to LIFE !</h2>
-    <img src="images/tech.jpg" width="auto" height="300px">
+    <img src="images/tech.jpg" width="250" height="100px">
     <!-- <video id="video" autoplay muted loop width="100%" height="150px" src="images/synapse.MOV"></video>  -->
 
   </div>
-
+  <!-- ////////////////////////// -->
+    <!-- Slides -->
+    <div style="height:100; background-color:#ffc600;"></div>
+    <div class="container col-md-12">
+                  <!-- /////////// -->
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                  <div class="active item">Process</div>
+                  <div class="item">Acoustic</div>
+                  <div class="item">Visual</div>
+                  <div class="item">Encoding</div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#carousel" data-slide="prev"><span class="glyphicon glyphicon-menu-left"></span></a>
+              <a class="carousel-control right" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </div>
+  </div>
 </div>
+
+
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>  
+  $('.carousel').carousel();
+</script>
+
+<script>  
 function showIt() {
   document.getElementById("portal").style.visibility = "visible";
 }
