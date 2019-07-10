@@ -42,53 +42,154 @@ background-color: #B45ee0;
 height: 100px;
 width: 50px;
 };
-/*  */
-/* Shine */
-.hover14 figure {
-	position: relative;
-}
-.hover14 figure::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.hover14 figure:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
+a {
+  text-decoration: none;
 }
 
-</style>
+h1 {
+  font-family: 'Bree Serif', serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+nav {
+  position: relative;
+}
+nav ul {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav ul li {
+  width: 20%;
+  text-align: center;
+}
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  color: slategrey;
+  transition: all .15s ease;
+}
+nav ul li a:hover {
+  color: #434d57;
+  transition: all .15s ease;
+}
+nav ul li a.selected {
+  transition: all .15s ease;
+  color: white;
+}
+
+#navActiveBG {
+  position: absolute;
+  top: 14px;
+  width: 20%;
+  height: 24px;
+  background: slategrey;
+  border-radius: 4px;
+  transition: -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
+  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
+  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5), -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
+  will-change: transform;
+  z-index: -1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.content {
+  margin-top: 2rem;
+  position: relative;
+}
+.content .section {
+  -webkit-animation: contentSwitch .5s forwards;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: contentSwitch .5s forwards;
+  /* IE 10+, Fx 29+ */
+  display: none;
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: white;
+}
+.content .section:nth-child(1) {
+  display: block;
+  background: #f857a6;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #ff5858, #f857a6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content .section:nth-child(2) {
+  background: #de6262;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #de6262, #ffb88c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content .section:nth-child(3) {
+  background: #5f2c82;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content .section:nth-child(4) {
+  background: #7474BF;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #348AC7, #7474BF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content .section:nth-child(5) {
+  background: #283048;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@-webkit-keyframes contentSwitch {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  </style>
 </head>
 
 <div class="particle-network-animation" ></div>
 <body style="background-color: #000000;">
-
+<div class="container">
   <div class="container">
     <div style="text-align:center;" >
         <img src="images/MOeTechLogow.png" height="200px"> <h2 style="color:#ffffff; font-size: 15px;"> Mouminatou Barry</h2> 
-        <video playsinline id="video" autoplay muted loop width="200px" height="150" src="images/un.mov"></video>  
-        <video playsinline id="video" autoplay loop muted style="min-width:100%; min-height:100%;" >
-            <source type="video/mp4" src="images/un.mov">
-         </video>
+        <video id="video" autoplay muted loop width="200px" height="150" src="images/un.mov"></video>  
+        
     </div>
   </div> 
  <div style="height:50px;"></div>
@@ -96,33 +197,84 @@ width: 50px;
 
 <div class="row col-md-12" style="text-align:center; height: 200px;"> 
     <!-- <video id="video" autoplay muted loop width="100%" height="150px" src="images/synapse.MOV"></video>  -->
-    <div class="col-md-3 hover14"style="text-align:center;"><h2>Moe</h2><a href="moe.html"><img height="100" src="images/moeabout.png"></a>
+    <div class="col-md-3"style="text-align:center;"><h2>Moe</h2><a href="moe.html"><img height="100" src="images/moeabout.png"></a>
     </div>
 
-    <div class="col-md-3 hover14" style="text-align:center;"><h2> Donate </h2><a href="https://www.paypal.me/moetech"> <img height="100" src="images/moedonate.png"></a>
+    <div class="col-md-3" style="text-align:center;"><h2> Donate </h2><a href="https://www.paypal.me/moetech"> <img height="100" src="images/moedonate.png"></a>
     </div>  
 
-    <div class="col-md-3 hover14" style="text-align:center;"><h2>Relativity </h2><a href="relative.html"> <img height="100" src="images/moerelative.png"></a>
+    <div class="col-md-3" style="text-align:center;"><h2>Relativity </h2><a href="relative.html"> <img height="100" src="images/moerelative.png"></a>
     </div>  
 
-     <div class="col-md-3 hover14" style="text-align:center;"><h2>Techtainment</h2><a href="tech.html"><img height="100" src="images/moetech.png"></a>
+     <div class="col-md-3" style="text-align:center;"><h2>Techtainment</h2><a href="tech.html"><img height="100" src="images/moetech.png"></a>
      </div> 
 </div>
 
 <div class="row col-md-12" style="text-align: center">
-    <h2>Making People Smarter, One Synapse at a Time !</h2>
-    <img height="100px" src="images/moemoe.png">
-    <!--  -->
-
-
+    <div class="wrapper">
+        <nav>
+          <ul>
+            <li><a onclick="toggleVisibility('1stSection');" data-identify="1" class="selected" href="#">Home</a></li>
+            <li><a onclick="toggleVisibility('2ndSection');" data-identify="2" href="#">90's Baby</a></li>
+            <li><a onclick="toggleVisibility('3rdSection');" data-identify="3" href="#">Level 1</a></li>
+            <li><a onclick="toggleVisibility('4thSection');" data-identify="4" href="#">Level 2</a></li>
+            <li><a onclick="toggleVisibility('5thSection');" data-identify="5" href="#">Menu</a></li>
+          </ul>
+          <span id="navActiveBG"></span>
+        </nav>
+        <div class="content">
+            <div id="1stSection" class="section">
+              <h1>Home</h1>
+            </div>
+            <div id="2ndSection" class="section">
+              <h1>Cartoon Network</h1>
+            </div>
+            <div id="3rdSection" class="section">
+              <h1>Level 1</h1>
+            </div>
+            <div id="4thSection" class="section">
+              <h1>Level 2</h1>
+            </div>
+            <div id="5thSection" class="section">
+              <h1>Menu</h1>
+            </div>
+        </div>
+      </div>
   </div>
 
 <!-- . --> 
-
+</div>
 
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function toggleVisibility(newSection) {
+    $(".section").not("#" + newSection).hide();
+    $("#" + newSection).show();
+  }
+  var $links = $('a');
+  $links.click(function(){
+    $links.removeClass('selected');
+    $(this).addClass('selected');
+    var identify= $(this).attr("data-identify");
+    if ( identify == 1 ) {
+      $('#navActiveBG').css ('transform', 'translateX(0%)');
+    }
+    if (identify == 2) {
+      $('#navActiveBG').css ('transform', 'translateX(100%)')
+    }
+    if ( identify == 3) {
+      $('#navActiveBG').css ('transform', 'translateX(200%)')
+    }
+    if ( identify == 4) {
+      $('#navActiveBG').css ('transform', 'translateX(300%)')
+    }
+    if ( identify == 5) {
+      $('#navActiveBG').css ('transform', 'translateX(400%)')
+    }
+  });</script>
 <script type="text/javascript">
         (function() {
     var ParticleNetworkAnimation, PNA;
