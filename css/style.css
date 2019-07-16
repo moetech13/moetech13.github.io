@@ -322,8 +322,55 @@ html {
 }
 /*End ParticleNav*/
 
-/* scroll */
+/* floating */
 
+.floating{
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+.floatingAlternate{
+  -webkit-animation-name: FloatingxAlternate;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: FloatingAlternate;
+  -moz-animation-duration: 2.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+  from {-webkit-transform:translate(0, 0px);}
+  65% {-webkit-transform:translate(0, 15px);}
+  to {-webkit-transform: translate(0, -0px);    }    
+}
+  
+@-moz-keyframes Floating{
+  from {-moz-transform:translate(0, 0px);}
+  65% {-moz-transform:translate(0, 15px);}
+  to {-moz-transform: translate(0, -0px);}    
+}
+
+@-webkit-keyframes FloatingxAlternate{
+  from {-webkit-transform:translate(0, 0px);}
+  60% {-webkit-transform:translate(0, 25px);}
+  to {-webkit-transform: translate(0, -0px);    }    
+}
+  
+@-moz-keyframes FloatingAlternate{
+  from {-moz-transform:translate(0, 0px);}
+  60% {-moz-transform:translate(0, 25px);}
+  to {-moz-transform: translate(0, -0px);}    
+}
+
+/* floating end */
 
 /* Pic Icons */
 
