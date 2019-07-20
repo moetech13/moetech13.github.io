@@ -82,28 +82,28 @@ nav li a:hover
 }
 nav li:first-child a
 {
-    border-left: 10px solid #3498db;
+    border-left: 10px solid #ffffff;
     
 }
 nav li:nth-child(2) a
 {
-    border-left: 10px solid #ffd071;
+    border-left: 10px solid #f382bf;
     
 } 
 nav li:nth-child(3) a
 {
-    border-left: 10px solid #f0776c;
+    border-left: 10px solid #ffc600;
     
 }
 
  nav li:nth-child(4) a
 {
-    border-left: 10px solid #d8e84a;
+    border-left: 10px solid #67b31b; 
     
 }
 nav li:last-child a
 {
-    border-left: 10px solid #1abc9c;
+    border-left: 10px solid #0092b3;
     
 }
 nav li a:after
@@ -125,24 +125,24 @@ nav li a:after
 }
 nav li:first-child a:hover
 {
-    background-color: #3498db;
+    background-color: #fff;
     
 }
  nav li:nth-child(2) a:after
 {
-    background-color:#ffd071;
+    background-color:#f382bf;
 }
 nav li:nth-child(3) a:after
 {
-    background-color:#f0776c;
+    background-color:#ffc600;
 } 
 nav li:nth-child(4) a:after
 {
-    background-color:#d8e84a;
+    background-color:#67b31b; 
 } 
 nav li:last-child a:after
 {
-    background-color:#1abc9c;
+    background-color:#0092b3;
 }
 /* text */
 
