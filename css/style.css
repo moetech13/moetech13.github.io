@@ -1,3 +1,7 @@
+
+html, body{
+  background-color: #000000;
+}
 /* Fonts */
 h2{
   font-family: 'Modak', cursive;
@@ -24,14 +28,14 @@ p{
 }
 .stroke{
   color: #ffffff;
-  -webkit-text-stroke: 0.35px #ffc600;
+  -webkit-text-stroke: 0.7px #ffc600;
 }
 .strokep{
-  -webkit-text-stroke: 0.35px #f382bf;
+  -webkit-text-stroke: 0.7px #f382bf;
 }.strokeg{
-  -webkit-text-stroke: 0.35px #67b31b;
+  -webkit-text-stroke: 0.7px #67b31b;
 }.strokeb{
-  -webkit-text-stroke: 0.35px #3ecbec;
+  -webkit-text-stroke: 0.7px #3ecbec;
 }
 /* text */
 
@@ -448,22 +452,6 @@ body,
 }
 
 /*  */
-
-html {
-  height: 100%;
-  overflow: hidden;
-  background-color: #000000;
-}
-  body { 
-  margin:0;
-  padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: #000000;
-}
 
  /* card */
  .skill-card {
