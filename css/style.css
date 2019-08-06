@@ -41,7 +41,7 @@ p{
 /* Nav */
 nav
 {
-    float: none;
+    float:none;
     clear:both;
     width:100%;
     margin:5% auto;
@@ -51,7 +51,7 @@ nav ul
 {
     list-style:none;
     margin:0px;
-    pading:0px;
+    padding:0px;
 }
 nav li
 {
@@ -63,22 +63,20 @@ nav li a
 {
     display: block;
     width:100%;
-    padding:20px;
+    padding:15px;
     border-left:5px solid;
     position:relative;
     z-index: 2;/*for showing the lower layer*/
     text-decoration: none;
     color:#000;
     font-weight:bolder;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 nav li a:hover
 {
     border-bottom: 0px;
     color:white;
-    text-decoration:none;
-    
+    text-decoration:none;   
 }
 nav li:first-child a
 {
@@ -562,7 +560,7 @@ body,
 
  /* card */
  .skill-card {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translateY(-50%) translateX(-50%);
@@ -701,7 +699,7 @@ body,
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("");
+  background-image: url("images/eng.png");
   background-position: center;
   background-size: cover;
   opacity: 0.2;
