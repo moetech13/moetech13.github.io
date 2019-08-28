@@ -65,10 +65,11 @@ nav li a
     width:100%;
     padding:15px;
     border-left:5px solid;
+    font-size: 5px;
     position:relative;
     z-index: 2;/*for showing the lower layer*/
     text-decoration: none;
-    color:#000;
+    color:#ffc600;
     font-weight:bolder;
     box-sizing: border-box;   
 }
@@ -699,7 +700,7 @@ body,
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("images/eng.png");
+  background-image: url("");
   background-position: center;
   background-size: cover;
   opacity: 0.2;

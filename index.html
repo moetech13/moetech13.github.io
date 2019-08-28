@@ -40,7 +40,43 @@ height: 100px;
 width: 50px;
 };
 /*  */
+.quote-container {
+ border-radius: 50px;
+  margin-top: 10px;
+  width: 75px;
+  height: 50px;
+}
+.quote-text {
+  text-align: center; 
+  padding-top: 3px;
+  font-family: 'Coiny', cursive;
+  color: #ffffff;
+}
+button {
+  height: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
+button:hover {
+  animation-duration:1s;
+  animation-name: slide;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes slide {
+  0% {
+    tranform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
 /* Shine */
 .hover14 figure {
 	position: relative;
@@ -108,10 +144,17 @@ width: 50px;
      <div id="click" class="col-md-3 hover14" style="text-align:center;"><h2 class="strokeb">Techtainment</h2><a href="tech.html"><img class ="floating" height="100" src="images/moetech.png"></a>
      </div> 
   
-     <div class="col-md-12" style="text-align:center;">
-       <img height="100px" src="images/moemoe.png">
+     <div class="col-md-12 quote-button" style="text-align:center;">
+       <button type="button"><img height="100px" src="images/moemoe.png"></button>
+        <div> 
+          <div class= "quote-container"> 
+            <div class="quote-text"></div>
+          </div>
+        </div>
        <h2 style="color:#ffffff; font-size: 10px;"> Mouminatou Barry</h2> 
       </div>
+
+      
     
 </div>
 
@@ -124,6 +167,26 @@ width: 50px;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
+// Quotes
+var quotes = [ 
+"Everyone has their own way of learning & memorizing DATA, but whats universal is our use of senses to obtain that data", 
+"This site goes through my background and how MOeT came to be, zapp along to coneect some pathways",
+"","Mouminatou Barry","Please feel free to donate so I could scale my startup"];
+
+$("document").ready(function() {
+  
+  function randomQuote(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  var currentQuote = function() {
+    return quotes[randomQuote(0, quotes.length - 1)];
+  }
+  
+  $("button").on("click", function() {
+    $(".quote-text").text(currentQuote);
+  });
+})
 //
 var $button = document.querySelector('.button');
 $button.addEventListener('click', function() {
