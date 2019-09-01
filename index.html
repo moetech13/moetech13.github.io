@@ -1,6 +1,15 @@
 <!Doctype html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146899361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146899361-1');
+</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,38 +53,39 @@ width: 50px;
  border-radius: 50px;
   margin-top: 10px;
   width: 75px;
-  height: 50px;
+  height: 50px;b v1
 }
 .quote-text {
   text-align: center; 
   padding-top: 3px;
   font-family: 'Coiny', cursive;
   color: #ffffff;
+  outline-color: #ffc600;
 }
 button {
-  height: 75px;
+  height: 100px;
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-  animation-duration:1s;
-  animation-name: slide;
-  animation-iteration-count: 1;
-  
-}
+/* btn5 */
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
 
-@keyframes slide {
-  0% {
-    tranform: rotateX(0deg);
-  }
-  50% {
-    transform: rotateX(180deg);
-  }
-  100% {
-    transform: rotateX(180deg);
-  }
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
 }
 /* Shine */
 .hover14 figure {
@@ -135,17 +145,17 @@ button:hover {
     <div class="col-md-3 click"style="text-align:center;"><h2 class="strokep">Moe</h2><a href="moe.html"><img class ="floating" height="100" src="images/moeabout.png"></a>
     </div>
 
-    <div class="col-md-3 hover14 " style="text-align:center;"><h2 class="stroke"> Donate </h2><a href="https://www.paypal.me/moetech"> <img class ="floating" height="100" src="images/moedonate.png"></a>
+    <div class="col-md-3 " style="text-align:center;"><h2 class="stroke"> Donate </h2><a href="https://www.paypal.me/moetech"> <img class ="floating" height="100" src="images/moedonate.png"></a>
     </div>  
 
-    <div class="col-md-3 button" style="text-align:center;"><h2 class="strokeg">Relativity </h2><a href="relative.html"> <img class ="floating" height="100" src="images/moerelative.png"></a>
+    <div class="col-md-3" style="text-align:center;"><h2 class="strokeg">Relativity </h2><a href="relative.html"> <img class ="floating" height="100" src="images/moerelative.png"></a>
     </div>  
 
-     <div id="click" class="col-md-3 hover14" style="text-align:center;"><h2 class="strokeb">Techtainment</h2><a href="tech.html"><img class ="floating" height="100" src="images/moetech.png"></a>
+     <div id="click" class="col-md-3" style="text-align:center;"><h2 class="strokeb">Techtainment</h2><a href="tech.html"><img class ="floating" height="100" src="images/moetech.png"></a>
      </div> 
   
      <div class="col-md-12 quote-button" style="text-align:center;">
-       <button type="button"><img height="100px" src="images/moemoe.png"></button>
+       <button class="btn btn-5" type="button"><img height="100px" src="images/moemoe.png"></button>
         <div> 
           <div class= "quote-container"> 
             <div class="quote-text"></div>
@@ -171,7 +181,7 @@ button:hover {
 var quotes = [ 
 "Everyone has their own way of learning & memorizing DATA, but whats universal is our use of senses to obtain that data", 
 "This site goes through my background and how MOeT came to be, zapp along to coneect some pathways",
-"","Mouminatou Barry","Please feel free to donate so I could scale my startup"];
+"","Math is the Language of the Universe","Follow me @Moe_Techtainment"];
 
 $("document").ready(function() {
   
