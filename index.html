@@ -92,14 +92,13 @@ width: 50px;
             <div style="height:100px;"></div>
           <div style="text-align:center;" >
               <img src="images/MOeTechLogow.png" height="200px"> 
-              <h1 style="font-size: 20px;" class="awesome floating">Making People Smarter, One Synapse at a Time !</h1> 
-              <video playsinline id="video" autoplay muted loop width="300" height="350" src="images/moeweb.mp4"></video>  
-          </div> 
-          <div style="height:200px;">.</div>
+              <h1 style="font-size: 20px;" class="awesome">Making People Smarter, One Synapse at a Time !</h1> 
+              <iframe width="350" height="197" src="https://www.youtube.com/embed/SvHzGpFt7bc?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </div> 
+      <div style="height:200px;">.</div>
     </div> 
       
        <!--  -->
-    <div class="row col-md-12" style="text-align:center;  height:100px;"> 
+    <div class="row col-md-12" style="text-align:center; height:200px;"> 
           <!-- <video id="video" autoplay muted loop width="100%" height="150px" src="images/synapse.MOV"></video>  -->
           <div class="col-md-3"style="text-align:center;"><h2 class="strokep">Moe</h2><a href="moe.html"><img class ="floating" height="100" src="images/moeabout.png"></a>
           </div>
@@ -112,40 +111,35 @@ width: 50px;
       
            <div class="col-md-3" style="text-align:center;"><h2 class="strokeb">Techtainment</h2><a href="tech.html"><img class ="floating" height="100" src="images/moetech.png"></a>
            </div> 
-         
-    </div>
-          <!-- bottom -->
-        <div class="row contianer col-md-12"> 
+          
+        <div class=" col-md-12"> 
           <div style="height: 200px;"></div>
+        </div>
+    </div>
+         <!-- bottom -->
+
+         <div class=" col-md-12" style="text-align: center; z-index: 2; " >  
+
+          <div class="row col-md-6" style="text-align: center;" >      
+            
+            <a class="social-icon social-icon--codepen">
+                <i class="fa fa-codepen"><h2 style="color:#ffffff; font-size: 10px;"> Mouminatou Barry</h2> </i>
+                <img height="100" src="images/moemoe.png"> 
+            </a>
+                  
+          </div>
+                
+
+        <div class="row col-md-6">
+          <a class="social-icon social-icon--codepen">
+            <i class="fa fa-codepen"><h2 style="color:#ffffff; font-size: 10px;"> Mouminatou Barry</h2> </i>
+            <img height="100" src="images/moemoe.png"> 
+        </a>
+        </div>
+
         </div>
             <!-- End -->
 
-            <div class="row col-md-12" style="text-align: center;" >      
-            
-              <a class="social-icon social-icon--codepen">
-                  <i class="fa fa-codepen"><h2 style="color:#ffffff; font-size: 10px;"> Mouminatou Barry</h2> </i>
-                  <img height="100" src="images/moemoe.png">  
-          
-              
-                  <div class="tooltip"><div class="scene">
-                      <div class="wrap">
-                          <div class="wall wall-right"></div>
-                          <div class="wall wall-left"></div>   
-                          <div class="wall wall-top"></div>
-                          <div class="wall wall-bottom"></div> 
-                          <div class="wall wall-back"></div>    
-                      </div>
-                      <div class="wrap">
-                          <div class="wall wall-right"></div>
-                          <div class="wall wall-left"></div>   
-                          <div class="wall wall-top"></div>
-                          <div class="wall wall-bottom"></div>   
-                          <div class="wall wall-back"></div>    
-                      </div>
-                    </div></div>
-                </a>
-                    
-            </div>
              
             
       </div>
@@ -153,35 +147,6 @@ width: 50px;
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-
-
-//slide
-function toggleVisibility(newSection) {
-    $(".section").not("#" + newSection).hide();
-    $("#" + newSection).show();
-  }
-  var $links = $('a');
-  $links.click(function(){
-    $links.removeClass('selected');
-    $(this).addClass('selected');
-    var identify= $(this).attr("data-identify");
-    if ( identify == 1 ) {
-      $('#navActiveBG').css ('transform', 'translateX(0%)');
-    }
-    if (identify == 2) {
-      $('#navActiveBG').css ('transform', 'translateX(100%)')
-    }
-    if ( identify == 3) {
-      $('#navActiveBG').css ('transform', 'translateX(200%)')
-    }
-    if ( identify == 4) {
-      $('#navActiveBG').css ('transform', 'translateX(300%)')
-    }
-    if ( identify == 5) {
-      $('#navActiveBG').css ('transform', 'translateX(400%)')
-    }
-  });</script>
 <script type="text/javascript">
         (function() {
     var ParticleNetworkAnimation, PNA;
