@@ -31,6 +31,45 @@
 <!--font-family: 'Open Sans', sans-serif;-->
 <!-- font icon css style-->
 <link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style>
+
+span.hoverBox a{
+	line-height:54px;
+}
+
+span.hoverBox .smallIcon{
+	width: 74x;
+	margin: 0px auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -80px;
+	margin-top: -37px;
+}
+
+span.hoverBox .zoom{
+	visibility:hidden;
+	width:74px;
+	height:74px;
+	border:1px solid #fff;
+	color:#fff;
+	position: relative;
+	left:-180%;
+	background:url(../images/plus-icon.png) 50% 50% no-repeat;
+	margin-left:47px;
+	/*top:40%;*/
+	text-align:center;
+	line-height:70px;
+	display: block;
+	float: left;
+	
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}</style>
 </head>
 
 <div class="particle-network-animation" ></div>
@@ -81,7 +120,7 @@
     <div class="banner row" id="banner">
     <div class="bannerText">
         <h1> Mouminatou Barry</h1>
-        <img src="images/MOeLogow.png" height="200px">
+        <img src="images/MOeLogow.png" height="150px">
         <h3>Making people Smarter, One Synapse at a Time</h3>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:100%"> 
@@ -145,7 +184,7 @@
             </div>
             <div class="col-md-12">
             	<div class="col-md-6 col-sm-12 media">
-                	<p>https://phys.org/news/2018-03-stephen-hawking-pinned-m-theory-fully.html</p>
+                	<img src="images/moemoe.png" height="100px">
                 </div>
             	<div class="col-md-6 col-sm-12">                
                 <div class="skillbar clearfix " data-percent="94%">
@@ -188,7 +227,7 @@
         <div class="row media">
         	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             	<div class="expertiesico">
-                	January,2015<br>Till Date
+                	Jan,2015<br>Till Date
                 </div>
             </div>
         	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -200,7 +239,7 @@
         <div class="row media">
         	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             	<div class="expertiesico">
-                	July,2011<br>February 2013
+                	Jul,2011<br>Feb 2013
                 </div>
             </div>
         	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -215,7 +254,7 @@
         <div class="row media">
         	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             	<div class="expertiesico">
-                	September,2019<br>June 2011
+                	Sept,2019<br>Jun 2011
                 </div>
             </div>
         	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -231,7 +270,7 @@
         <div class="row media">
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                 <div class="expertiesico">
-                    July,2014<br>August 2019
+                    Jul,2014<br>Aug 2019
                   </div>
               </div>
             <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -246,7 +285,7 @@
           <div class="row media">
               <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                   <div class="expertiesico">
-                      July,2014<br>February 2016
+                      Jul,2014<br>Feb 2016
                     </div>
                 </div>
               <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -266,15 +305,15 @@
   	<div class="container">
         <div class="heading">
         <h2>Education &amp; Diplomas</h2>
-        <h3>A lot of my knowledge comes from my change of environments and utilzing my tools
-
+        <h3>
+Knowledge is Power
         </h3>        
       </div>
        
       <div class="row media">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             <div class="expertiesico">
-                Jan 2018<br>January 2017
+                Jan 2018<br>Jan 2017
               </div>
           </div>
         <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -286,7 +325,7 @@
         <div class="row media">
         	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             	<div class="expertiesico">
-                	Jan 2017<br>January 2016
+                	Jan 2017<br>Jan 2016
                 </div>
             </div>
         	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -310,7 +349,7 @@
         <div class="row media">
         	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             	<div class="expertiesico">
-                	June 2014<br>Sept 2011
+                	Jun 2014<br>Sept 2011
                 </div>
             </div>
         	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -332,35 +371,73 @@
             <h3>Who is MOe</h3>            
         </div>
     </div>
-  <div class="container">
-    <div class="row col-md-12" style="text-align: center;">
-      <div class="row col-md-4">
-      Instagram
-      <iframe src="https://www.linkedin.com/in/successfulentrepreneur13" ></iframe>
-      </div>
-      <div class="row col-md-4">
-      Linkedin
-      <iframe src="https://www.linkedin.com/in/successfulentrepreneur13" ></iframe>
-      </div>
-      <div class="row col-md-4">
-      youtube
-      <iframe src="https://www.linkedin.com/in/successfulentrepreneur13" ></iframe>
-      </div>
-    </div>
-    <!--  -->
-    <div class="row col-md-12" style="text-align:center; height:150px;">
-        <div class="row col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <iframe src="https://www.youtube.com/embed/m-jEUFnUU6U?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="row col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <iframe src="https://www.youtube.com/embed/J6JBydV2qUM"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="row col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <iframe src="https://www.youtube.com/embed/JOjjSTsyB9s?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    <!--  -->
+<!-- Grid -->
+<div class="row">
+  <div class="portfolioFilter">
+    <ul>
+      <li><a href="#" data-filter="*" class="current">All</a></li>
+      <li><a href="#" data-filter=".wordpress">Advocacy</a></li>
+      <li><a href="#" data-filter=".template">Press</a></li>
+      <li><a href="#" data-filter=".illustration">United Nations</a></li>
+      <li class="last"><a href="#" data-filter=".webdesign">Youtube</a></li>
+    </ul>
   </div>
+  <ul class="portfolioContainer row">
+
+    <li class="template wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"><iframe src="https://www.nbcnews.com/news/embedded-video/mmvo43975237675" scrolling="no" frameborder="0" allowfullscreen></iframe></div>
+    </li>
+    <!--  -->
+    <li class="template wordpress illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/zNIX7E6t2BQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="wordpress illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.facebook.com/unitednations/videos/271458900429986/?v=271458900429986" scrolling="no" frameborder="0" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="webdesign wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/XKmdCzQGtXE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </li>
+    <!--  -->
+    <li class="wordpress template col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/IsMmwsdwT9Q?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="template webdesign illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon">  <iframe src="https://www.youtube.com/embed/UQP3Q5LfBU0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="webdesign col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/gT3fsvXg-BQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="webdesign illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/_MJ7IztZDSk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="webdesign col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/jItGRfKAbVc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+    </li>
+    <!--  -->
+    <li class="webdesign col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon">             <iframe src="https://www.youtube.com/embed/m-jEUFnUU6U?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </li>
+    <!--  -->
+    <li class="webdesign col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/J6JBydV2qUM"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </li>
+    <!--  -->
+    <li class="webdesign col-xs-6 col-sm-4 col-md-3 col-lg-3">
+      <div class="lightCon"> <iframe src="https://www.youtube.com/embed/JOjjSTsyB9s?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </li>
+  </ul>
+  <div class="row col-md-12" style="height: 100px"> <a href="https://www.forbes.com/sites/jerelynrodriguez/2018/08/01/how-corporate-investments-are-moving-social-innovation-forward/#4a300bf3a76e"></a> </div>
+</div>
+<!-- End Grid -->
   </section>
   <!--portfolio end-->   
   
@@ -368,44 +445,27 @@
   <section class="contact" id="contact">
     <div class="container">
       <div class="heading">
-        <h2>Press</h2>
-        <h3>Moe in the News</h3>  
+        <h2>Social Media</h2>
+        <h3>Follow Moe Techtainment & stay in tune</h3>  
       </div>
-      <div class="container">
-          <div class="row col-md-12" style="text-align: center;">
-            <div class="row col-md-4">
-            United Nations
-                <iframe src="http://webtv.un.org/watch/-re-imagining-the-power-of-education-for-girls-in-africa-and-beyond-sdg-media-zone-during-the-2019-high-level-political-forum-hlpf-2019-side-event/6057057823001/" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder='0'></iframe>
-            </div>
-            <!--  -->
-            <div class="row col-md-4">
-                <iframe src="https://www.nbcnews.com/news/embedded-video/mmvo43975237675" scrolling="no" frameborder="0" allowfullscreen></iframe>     
-
-            </div>
-            <!--  -->
-            <div class="row col-md-4">
-                <iframe src="https://www.nbcnews.com/news/embedded-video/mmvo43975237675" scrolling="no" frameborder="0" allowfullscreen></iframe>     
-
-              </div>
-
-          </div>
-           
-          </div>
           <!--  -->
-          <div class="row col-md-12" style="text-align: center;">
-              <div class="row col-md-4 border border-warning">
-                  <iframe src="https://www.forbes.com/sites/jerelynrodriguez/2018/08/01/how-corporate-investments-are-moving-social-innovation-forward/#4a300bf3a76e" scrolling="no" frameborder="0" ></iframe>     
-              Forbes
+          <div class="portfolioContainer row" style="text-align: center;">
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 ">
+                  Instagram
+                  <img src="images/moeinsta.png">
+                  <a href="https://www.instagram.com/moe_techtainment/">Visit Profile</a>
+              <!--  -->
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              LinkedIn
+              <img src="images/moelinked.png">
+              <a href="https://www.linkedin.com/in/successfulentrepreneur13">Visit Profile</a>
+
               </div>
               <!--  -->
-              <div class="row col-md-4 justify-content-around">
-              Startup Bus
-              <iframe src="https://www.nbcnews.com/news/embedded-video/mmvo43975237675" scrolling="no" frameborder="0" allowfullscreen></iframe>     
-              </div>
-              <!--  -->
-              <div class="row col-md-4 justify-content-around">
-              JpM Chase
-              <iframe src="https://www.nbcnews.com/news/embedded-video/mmvo43975237675" scrolling="no" frameborder="0" allowfullscreen></iframe>     
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              Twitter
+              <img src="images/moetwitter.png">
+              <a href="https://twitter.com/moetechtainment">Visit Profile</a>
 
               </div>
           </div>
