@@ -69,7 +69,7 @@ p{
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-  height: 400px;
+  height: 500px;
 }
 .item:nth-child(1) {
   background: #E46653;
