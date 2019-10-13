@@ -67,6 +67,22 @@ width: 50px;
     border: 0;
 }
 /* Shine */
+.image-card {
+  position:relative;
+  top: 0;
+  left: 0;
+  
+}
+
+.image-card img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(2.08);
+  transform: scale(2.08);
+}
 
   </style>
 </head>
@@ -74,14 +90,14 @@ width: 50px;
 <div class="particle-network-animation" ></div>
 <body style="background-color: #000000;">
   
-    <div class=" container col-md-12">
+    <div class="container col-md-12">
             <div style="height:100px;"></div>
 
-          <div class="container" style="text-align:center;" >
+    <div class="container" style="text-align:center;" >
               <img src="images/MOeTechLogow.png" height="200"> 
               <h2 style="font-size: 20px;" class="animate">Making People Smarter, One Synapse at a Time !</h2>
               <div style="height:70px"></div>
-              <div class="iframe-container">
+              <div>
                   <iframe width="380" height="315" src="https://www.youtube-nocookie.com/embed/oDs9dahGv4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
     </div> 
@@ -127,24 +143,33 @@ width: 50px;
           <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
       </div>
           <!-- End -->
-            <div  style="text-align: center;" class="col-md-12">
+            <div  style="text-align: center;" class="col-md-12 zoom-effect-container">
                 
-                <div class="col-md-2"> <img src="images/level.png" height="100"> </div>
+                <div class="col-md-2 image-card"> <img src="images/level.png" height="100"> </div>
                 <div class="col-md-2"> <img src="images/level0.png" height="100"> </div>
                 <div class="col-md-2"> <img src="images/level1.png" height="100"> </div>
                 <div class="col-md-2"> <img src="images/level2.png" height="100"> </div>
                 <div class="col-md-2"><img src="images/level3.png" height="100"> </div>
-                <div class="col-md-2"><img src="images/level4.png"  height="100"> </div>
-               
+                <div class="col-md-2"><img src="images/level4.png"  height="100"> </div>              
         </div>
-
+        <div class="zoom-effect-container">
+            <div class="image-card">
+                <img src="images/level0.png" height="100">
+            </div>
+            <div class="image-card">
+                <img src="images/level1.png" height="100">
+            </div>
+            <div class="image-card">
+                <img src="images/level2.png" height="100">
+            </div>
+          </div>
        <!--  -->
 
-       <div class="col-md-12" style="text-align:center; " > </br></br> <img class="floating" height="50" src="images/hand.png"> </br>
+       <div class="col-md-12" style="text-align:center; " > </br></br></br></br> <img class="floating" height="50" src="images/hand.png"> </br>
          <img height="150" src="images/moemoe.png"> </br><h2 style="color:#ffffff; font-size: 15px;"> Mouminatou Barry</h2> 
           <div style="height:70px"></div> 
         </div>
-
+<!--  -->
         <div class="row col-md-12" style="text-align:center; "> 
             <div class="col-md-3"style="text-align:center;"><h2 class="strokep">Moe</h2><a href="moe.html"><img class="floating" height="100" src="images/moeabout.png"></a>
             </div>
