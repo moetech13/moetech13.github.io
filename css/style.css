@@ -281,44 +281,6 @@ nav li:last-child a:after
 
 /* Text Boxes */
 
-.contentmoeS {
-  background: #B70000;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #B70000, #fff, #f40);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
-}
-.contentmoeT {
-  display: block;
-  background: #f382bf;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #f382bf, #fff, #f857a6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
-} 
-.contentmoeE{
-  background:#67b31b;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #096e18, #fff, #67b31b);
-}
-.contentmoeA{
-  background: #ffc600;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #ffca4d, #fff, #ffc600);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.contentmoeM{ background: #3ecbec;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #0092B3, #fff, #3ecbec);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .img{
   margin-top: 2rem;
   padding: 3px;
@@ -332,7 +294,7 @@ nav li:last-child a:after
 
 h2 {
   
-  font-family: 'Rum Raisin', sans-serif;
+  font-family: 'Modak', cursive;
   position: relative;
   color: #fff;
   font-size: 15px;

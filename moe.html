@@ -30,6 +30,139 @@
 <!--font-family: 'Metrophobic', serif;-->
 <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet' type='text/css'> 
 <!--font-family: 'Open Sans', sans-serif;-->
+
+<style>
+.snip1446 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 70px;
+    max-width: 150px;
+    max-height: 100px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+  }
+  .snip1446 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1446 img {
+    opacity: 1;
+    width: 100%;
+  }
+  .snip1446:after,
+  .snip1446:before,
+  .snip1446 figcaption:after,
+  .snip1446 figcaption:before {
+    background: #0a0a0a;
+    width: 25%;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    -webkit-transition: all 0.3s steps(4);
+    transition: all 0.3s steps(4);
+    z-index: 1;
+    top: 100%;
+    bottom: 0;
+  }
+  .snip1446:before {
+    left: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+  }
+  .snip1446:after {
+    left: 25%;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  .snip1446 figcaption:before {
+    left: 50%;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    z-index: -1;
+  }
+  .snip1446 figcaption:after {
+    left: 75%;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    z-index: -1;
+  }
+  .snip1446 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+  }
+  .snip1446 h2,
+  .snip1446 p,
+  .snip1446 .icons {
+    margin: 0;
+    width: 100%;
+    opacity: 0;
+    color: #ffffff;
+  }
+  .snip1446 h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .snip1446 p {
+    font-weight: 300;
+  }
+  .snip1446 .icons {
+    position: relative;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+  }
+  .snip1446 i {
+    padding: 0px 10px;
+    display: inline-block;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .snip1446 i:hover {
+    opacity: 1;
+  }
+  .snip1446:hover:after,
+  .snip1446.hover:after,
+  .snip1446:hover:before,
+  .snip1446.hover:before,
+  .snip1446:hover figcaption:after,
+  .snip1446.hover figcaption:after,
+  .snip1446:hover figcaption:before,
+  .snip1446.hover figcaption:before {
+    top: 0;
+    opacity: 0.8;
+  }
+  .snip1446:hover figcaption h2,
+  .snip1446.hover figcaption h2,
+  .snip1446:hover figcaption p,
+  .snip1446.hover figcaption p,
+  .snip1446:hover figcaption .icons,
+  .snip1446.hover figcaption .icons {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .snip1446:hover figcaption h2,
+  .snip1446.hover figcaption h2,
+  .snip1446:hover figcaption .icons,
+  .snip1446.hover figcaption .icons {
+    opacity: 1;
+  }
+  .snip1446:hover figcaption p,
+  .snip1446.hover figcaption p {
+    opacity: 0.7;
+  }
+  /*  */</style>
 </head>
 
 <div class="particle-network-animation" ></div>
@@ -142,12 +275,12 @@
                 <h2>Skills &amp; Expertice</h2>
                 <h3>Creativity starts with a growth-mindset</h3>        
               </div>
-            </div>
-            <div class="col-md-12">
-            	<div class="col-md-6 col-sm-12 media">
-                	<img src="images/moemoe.png" height="100px">
+              <div style="text-align: center" class=" media">
+                	<img src="images/moetkh.jpg" height="250px"> </br></br></br></br>
                 </div>
-            	<div class="col-md-6 col-sm-12">                
+            </div>
+            <div class="col-md-12">             
+            	<div class="col-md-12 col-sm-12">                
                 <div class="skillbar clearfix " data-percent="94%">
                     <div class="skillbar-title"><span>HTML / CSS</span></div>
                     <div class="skillbar-bar"></div>
@@ -409,23 +542,44 @@ Knowledge is Power
         <h3>Follow Moe Techtainment & stay in tune</h3>  
       </div>
           <!--  -->
-          <div class="portfolioContainer row" >
-              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 ">
-                  Instagram
-                  <img src="images/moeinsta.png">
-                  <a href="https://www.instagram.com/moe_techtainment/">Visit Profile</a>
+          <div class="portfolioContainer row">
+              <div class="col-md-4">
+                  <figure class="snip1446">
+                      <img src="images/b70000.png" alt="sample15" />
+                      <figcaption>
+                        <h2 style="font-size: 10px;">Basketball</h2>
+                        <p style="font-size: 8px;">Growing up I've always been an Athlete, my favorite physical sport is Basketball</p>
+                        <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                        </br>
+                        </div>
+                      </figcaption>
+                    </figure>
+              </div>  <div class="col-md-4">
+                  <figure class="snip1446">
+                      <img src="images/67b31b.png" alt="sample15" />
+                      <figcaption>
+                        <h2 >Chess</h2>
+                        <p style="font-size: 8px;">I've been playing Chess since I was 7 & since then I've travelled across the US aas a National Chess Champ</p>
+                        <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                        </div>
+                      </figcaption>
+                    </figure>
+              </div> 
+               <div class="col-md-4">
+                  <figure class="snip1446">
+                      <img src="images/0092b3.png" alt="sample15" />
+                      <figcaption>
+                        <h2>Entrepreneurship</h2>
+                        <p>Since 13, I became an Inventor, seeing ideas become reality really made me happy</p>
+                        <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                        </div>
+                      </figcaption>
+                    </figure>
               </div>
-              <!--  -->
-              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-              LinkedIn
-              <img src="images/moelinked.png">
-              <a href="https://www.linkedin.com/in/successfulentrepreneur13">Visit Profile</a>
-              </div>
-              <!--  -->
-              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-              Twitter
-              <img src="images/moetwitter.png">
-              <a href="https://twitter.com/moetechtainment">Visit Profile</a>
+           
+              
+              
+              
               </div>
           </div>
           <!--  -->
@@ -463,15 +617,6 @@ Knowledge is Power
         
             <div style="text-align: center;"><h2 >Making People Smarter <img src="images/moetechB.png" height="100px"> One Synapse At A Time</h2></div>
                     
-                        <ul>
-                            <li><a href="https://www.google.com/search?q=mouminatou+barry"><i class="fa fa-google fa-2x"></i></a></li>
-                            <li><a href="https://www.facebook.com/MOeTechtainment/"><i class="fa fa-facebook fa-2x"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/successfulentrepreneur13/"><i class="fa fa-linkedin fa-2x"></i></a></li>
-
-                            <li><a href="https://www.youtube.com/channel/UCZL_2jz2gFnVJoPPF8DfLmQ"><i class="fa fa-youtube" fa-2x aria-hidden="true"></i></a></li>
-                            <li style="color:#ffc600"><a href="https://twitter.com/MoeTechtainment"><i class="fa fa-twitter fa-2x"></i></a></li>
-                            
-                          </ul>
     
     </div>
     <p class="text-center"><a href="#wrapper" class="gototop"><img src="images/pTransLogo.png"></a></p>
