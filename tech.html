@@ -90,90 +90,18 @@ nav ul li a.selected {
   z-index: -1;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-
-.contentmoe {
-  margin-top: 2rem;
-  position: relative;
-}
-.contentmoe .section {
-  -webkit-animation: contentSwitch .5s forwards;
-  /* Safari 4+ */
-  /* Fx 5+ */
-  /* Opera 12+ */
-  animation: contentSwitch .5s forwards;
-  /* IE 10+, Fx 29+ */
-  display: none;
-  background-color: white;
-  padding: 3px;
-  border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  color: white;
-  height: 500px;
-  width: 414px;
-}
-.contentmoe .section:nth-child(1) {
-  display: block;
-  background: #f857a6;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #ff5858, #f857a6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.contentmoe .section:nth-child(2) {
-  background: #de6262;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #de6262, #ffb88c);
-}
-.contentmoe .section:nth-child(3) {
-  background: #5f2c82;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #49a09d, #5f2c82);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.contentmoe .section:nth-child(4) {
-  background: #7474BF;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #348AC7, #7474BF);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.contentmoe .section:nth-child(5) {
-  background: #283048;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #859398, #283048);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-@-webkit-keyframes contentSwitch {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-    -webkit-filter: blur(15px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
   </style>
 </head>
-<div class="particle-network-animation" ></div>
-<body style="text-align:center;" >
-<div class="container">
-  <div class=" col-md-12" >
+<div class="particle-network-animation"></div>
+<body style="background-color: #000000; text-align:center;" >
+    <div class="container">
+
+  <div class="col-md-12" >
 <!-- Header -->
 <div><img class="animate floating" src="images/moetech.png" height="150px"> </div>
 <div style="height:150px;"></div>
 
-    <div class="container col-md-12" style="text-align: center;" >
+    <div class="container">
       <div class="skill-card">
         <header class="skill-card__header" style="background-color: #0092b3;"><video class="skill-card__icon" id="video" autoplay muted loop  alt="what is Relativity" src="images/mtechtainment.MOV"></video>  
         </header>
@@ -186,165 +114,182 @@ nav ul li a.selected {
         </section>
       </div>
     </div>
-
-<div style="height:50px;"></div>   
 </div>
-<!-- Green -->
+<!-- header done -->
 <div class="container col-md-12" style="background-color:#0092b3; text-align:center;"> 
 
-      <div class="container " style="text-align:center;" >
+      <div class="row" style="text-align:center;" >
       
         <iframe width="325" height="300" src="https://prezi.com/view/kMDxcGLHN5ijKoOjfViX/embed" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1"></iframe>
      
-      </div>
-  
-      
+      </div>      
 </div>
-<div style="height:50px;"></div>  
-   <!-- /////////// -->       
-<div class="row col-md-12" style="background-color:rgba(0, 0, 0, 0.3);">
-    <!-- <div style="height:100px;">
-        <h2 style="color:#000000;">Let her explore the unknown she discover new meanings to LIFE !</h2>
-        <video playsinline id="video" autoplay muted loop width="300" height="350" src="images/moehome.mp4"></video> 
-    </div>  -->
-  <div class="wrapper">
-        <nav>
-          <ul>
-            <li><a onclick="toggleVisibility('1stSection');" data-identify="1" class="selected" href="#">Science</a></li>
-            <li><a onclick="toggleVisibility('2ndSection');" data-identify="2" href="#">Tech</a></li>
-            <li><a onclick="toggleVisibility('3rdSection');" data-identify="3" href="#">Engineering</a></li>
-            <li><a onclick="toggleVisibility('4thSection');" data-identify="4" href="#">Arts</a></li>
-            <li><a onclick="toggleVisibility('5thSection');" data-identify="5" href="#">Math</a></li>
-          </ul>
-          <span id="navActiveBG"></span>
-        </nav>
-        <div class="contentmoe">
-            <div id="1stSection" class="section">
-              <h1>Science</h1>
-            </div>
-            <div id="2ndSection" class="section">
-              <h1>Tech</h1>
-            </div>
-            <div id="3rdSection" class="section">
-              <h1>Engineering</h1>
-            </div>
-            <div id="4thSection" class="section">
-              <h1>Arts</h1>
-            </div>
-            <div id="5thSection" class="section">
-              <h1>Math</h1>
-            </div>
+ <!-- break -->
+ <div style="background-color: transparent; height:100px;"></div>  
+ <div class="row" style="height:150px;"><h1> The Human Central Nervous System</h1> </div>  
+ <!-- M -->
+ <div class="row">
+    <div style="height:50px;"></div>  
+ 
+   <div class="col-md-12">
+      <div class="skill-card" >
+          <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
+          <section class="skill-card__body">
+            <h2 class="skill-card__title">Cognitive Education</h2><span class="skill-card__duration"><p>Use your Senses to Strengthen your Knowledge</p></span>
+            <ul class="skill-card__knowledge">
+                <a href="#" class="action-button shadow animate" style="background-color: #0092B3;">📐 </a>
+            </ul>
+          </section>
         </div>
     </div>
-     <!-- break -->
- <div style="height: 100px;"></div>
-  </div>
-  <!-- ///////////// -->
-
- <!-- M -->
-<div class="container">
-<!-- . -->
-<div class="col-md-12">
-    <div class="skill-card" >
-        <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
-        <section class="skill-card__body">
-          <h2 class="skill-card__title">MATH</h2><span class="skill-card__duration"><p>Math Q:the study of such topics as quantity, structure, space, and change. Mathematicians seek and use patterns to formulate new conjectures; they resolve the truth or falsity of conjectures by mathematical proof</p></span>
-          <ul class="skill-card__knowledge">
-              <a href="#" class="action-button shadow animate" style="background-color: #0092B3;">📐 </a>
-          </ul>
-        </section>
-      </div>
- </div>
-<!-- . -->
+  <!-- . -->
 <div class="row">
- <div class="col">
-     <figure class="snip1446">
-         <img src="images/moetechmath.gif" alt="sample15" />
-         <figcaption>
-           <h2>Pelican Steve</h2>
-           <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
-           <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
-             <a href="#"> <i class="ion-person-add"></i></a>
-             <a href="#"> <i class="ion-heart"></i></a>
-           </div>
-         </figcaption>
-       </figure>
- </div>
- <div class="col">
-     <figure class="snip1446">
-         <img src="images/0092b3.png" alt="sample15" />
-         <figcaption>
-           <h2>Pelican Steve</h2>
-           <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
-           <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
-             <a href="#"> <i class="ion-person-add"></i></a>
-             <a href="#"> <i class="ion-heart"></i></a>
-           </div>
-         </figcaption>
-       </figure>
- </div>
- <div class="col">
-     <figure class="snip1446">
-         <img src="images/0092b3.png" alt="sample15" />
-         <figcaption>
-           <h2>Pelican Steve</h2>
-           <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
-           <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
-             <a href="#"> <i class="ion-person-add"></i></a>
-             <a href="#"> <i class="ion-heart"></i></a>
-           </div>
-         </figcaption>
-       </figure>
- </div>
- <div class="col">
-     <figure class="snip1446">
-         <img src="images/0092b3.png" alt="sample15" />
-         <figcaption>
-           <h2>Pelican Steve</h2>
-           <p>pics</p>
-           <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
-             <a href="#"> <i class="ion-person-add"></i></a>
-             <a href="#"> <i class="ion-heart"></i></a>
-           </div>
-         </figcaption>
-       </figure>
- </div>
- <div class="col">
-     <figure class="snip1446">
-         <img src="images/0092b3.png" alt="sample15" />
-         <figcaption>
-           <h2>Pelican Steve</h2>
-           <p>Pics</p>
-           <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
-             <a href="#"> <i class="ion-person-add"></i></a>
-             <a href="#"> <i class="ion-heart"></i></a>
-           </div>
-         </figcaption>
-       </figure>
- </div>
- <div class="col">
-    <figure class="snip1446">
-        <img src="images/0092b3.png" alt="sample15" />
-        <figcaption>
-          <h2>Pelican Steve</h2>
-          <p>Pics</p>
-          <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
-            <a href="#"> <i class="ion-person-add"></i></a>
-            <a href="#"> <i class="ion-heart"></i></a>
-          </div>
-        </figcaption>
-      </figure>
-</div>
- </div>
+        <div class="col">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" alt="sample15" />
+                <figcaption>
+                  <h2>1</h2> </br> </br>
+                  <p>Memory.</p>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="col">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" alt="sample15" />
+                <figcaption>
+                  <h2>2</h2> </br> </br>
+                  <p>Synapses</p>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="col">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" alt="sample15" />
+                <figcaption>
+                  <h2>3</h2> </br> </br>
+                  <p>Senses</p>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="col">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" alt="sample15" />
+                <figcaption>
+                  <h2>4</h2> </br> </br>
+                  <p>Attention/Awareness</p>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="col">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" alt="sample15" />
+                <figcaption>
+                  <h2>5</h2> </br> </br>
+                  <p>Encoding</p>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="col">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" alt="sample15" />
+                <figcaption>
+                  <h2>6</h2> </br> </br>
+                  <p>Recall.</p>
+                </figcaption>
+              </figure>
+        </div>
+  </div>
+  </div>
+ <!-- break CNS-->
+ <div class="row">
+    <h3>DO I SEE ANYTHING</h3>
+    <iframe>
 
+    </iframe>
+ </div>
+ <div style="background-color: transparent; height:100px;"></div>  
+ <!-- M -->
+ <div class="row">
+    <div style="height:50px;"></div>  
+
+   <div class="col-md-12">
+      <div class="skill-card" >
+          <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
+          <section class="skill-card__body">
+            <h2 class="skill-card__title">Neuroplasticity</h2><span class="skill-card__duration"><p>Do methods such as the Loci Method (Memory Palace) work</p></span>
+            <ul class="skill-card__knowledge">
+                <a href="#" class="action-button shadow animate" style="background-color: #0092B3;">📐 </a>
+            </ul>
+          </section>
+        </div>
+    </div>
+  <!-- . -->
+  <div class="row">
+    <div class="col">
+        <figure class="snip1446">
+            <img src="images/0092b3.png" alt="sample15" />
+            <figcaption>
+              <h2>1</h2> </br> </br>
+              <p>Memory.</p>
+            </figcaption>
+          </figure>
+    </div>
+    <div class="col">
+       <figure class="snip1446">
+           <img src="images/0092b3.png" alt="sample15" />
+           <figcaption>
+             <h2>2</h2> </br> </br>
+             <p>Synapses</p>
+           </figcaption>
+         </figure>
+   </div>
+   <div class="col">
+       <figure class="snip1446">
+           <img src="images/0092b3.png" alt="sample15" />
+           <figcaption>
+             <h2>3</h2> </br> </br>
+             <p>Senses</p>
+           </figcaption>
+         </figure>
+   </div>
+   <div class="col">
+       <figure class="snip1446">
+           <img src="images/0092b3.png" alt="sample15" />
+           <figcaption>
+             <h2>4</h2> </br> </br>
+             <p>Attention/Awareness</p>
+           </figcaption>
+         </figure>
+   </div>
+   <div class="col">
+       <figure class="snip1446">
+           <img src="images/0092b3.png" alt="sample15" />
+           <figcaption>
+             <h2>5</h2> </br> </br>
+             <p>Encoding</p>
+           </figcaption>
+         </figure>
+   </div>
+   <div class="col">
+       <figure class="snip1446">
+           <img src="images/0092b3.png" alt="sample15" />
+           <figcaption>
+             <h2>6</h2> </br> </br>
+             <p>Recall.</p>
+           </figcaption>
+         </figure>
+   </div>
+  </div>
+<!-- End -->
 </div>
+
      <!-- break -->
      <div style="height:150px;"></div>  
      <div class="col-12"> 
         <div style="text-align: center; color:#fff;"></br><h5>under construction</h5></div>
       </div>
      <!-- . -->  
-   <div class="container" style="height:50px;">  
+   <div class="row" style="height:50px;">  
      <!-- Nav Area -->
      <div class="col-md-12" style="text-align:center;">
       <nav>
