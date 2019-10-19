@@ -68,13 +68,15 @@ width: 50px;
 }
 /* Shine */
 
-
   </style>
 </head>
 
 <div class="particle-network-animation" ></div>
-<body style="background-color: #000000;">
-  
+<body onLoad="load()" onUnload="GUnload()">
+    <div id="preloader">
+        <div id="status"></div>
+        <h2 style="color: #ffc600;">Think. Try. Succeed!</h2>
+      </div>
     <div class="container col-md-12">
             <div style="height:100px;"></div>
 

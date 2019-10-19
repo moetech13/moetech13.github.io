@@ -97,12 +97,16 @@ nav ul li a.selected {
   </style>
 </head>
 <div class="particle-network-animation"></div>
-<body style="background-color: #000000; text-align:center;" >
+<body onLoad="load()" onUnload="GUnload()" >
+    <div id="preloader">
+        <div id="status"></div>
+        <h2 style="color: #ffc600">Numbers are ALL around us!</h2>
+      </div>
     <div class="container">
 
 <div class="col-md-12" >
 <!-- Header -->
-<div><img src="images/moerelative.png" height="150px"> </div>
+<div style="text-align: center;"><img src="images/moerelative.png" height="150px"> </div>
 <div style="height:150px;"></div>
 
     <div class="container">
@@ -129,8 +133,7 @@ nav ul li a.selected {
     </div>      
 </div>
    <!-- break -->
-   <div style="background-color: transparent; height:200px;"></div>  
-   <div class="row" style="height:150px;"><h1> The Human Central Nervous System</h1> </div>  
+   <div style="background-color: transparent; height:200px;"><h1>Human Central Nervous System</h1></div>  
 <!-- STEAM -->
 <div class="row">
     <div style="height:50px;"></div>  

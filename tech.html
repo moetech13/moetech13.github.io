@@ -93,10 +93,14 @@ nav ul li a.selected {
   </style>
 </head>
 <div class="particle-network-animation"></div>
-<body style="background-color: #000000; text-align:center;" >
+<body onLoad="load()" onUnload="GUnload()">
+    <div id="preloader">
+        <div id="status"></div>
+        <h2 style="color:#ffc600;">One Synapse at a Time 🌙</h2>
+      </div>
     <div class="container">
 
-  <div class="col-md-12" >
+  <div class="col-md-12" style="text-align: center;">
 <!-- Header -->
 <div><img class="floating" src="images/moetech.png" height="150px"> </div>
 <div style="height:150px;"></div>

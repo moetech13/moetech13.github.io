@@ -1081,7 +1081,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	display:inline-block;
 	width:40px;
 	height:40px;
-	border:2px solid #746c75;
 }
 .gototop i {
 	color:#817a82;
@@ -1095,7 +1094,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#fff; /* change if the mask should have another color then white */
+	background-color:#000; /* change if the mask should have another color then white */
 	z-index:9999999999; /* makes sure it stays on top */
 }
 
