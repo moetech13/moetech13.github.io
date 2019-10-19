@@ -632,18 +632,13 @@ span:nth-child(46) {
   transition: all 0.3s ease 2.3s;
 }
 /*flyin  */
-.animate
-{
-	transition: all 0.1s;
-	-webkit-transition: all 0.1s;
-}
 
 .action-button
 {
 	position: relative;
 	padding: 10px 40px;
   margin: 0px 10px 10px 0px;
-  width: 50px;
+ 
   float: center;
 	border-radius: 10px;
 	font-size: 12px;
@@ -653,6 +648,7 @@ span:nth-child(46) {
 
 .red
 {
+  width: 50px;
 	background-color: #FFC600;
 	border-bottom: 5px solid #FF0000;
 	text-shadow: 0px -2px #FF0000;
