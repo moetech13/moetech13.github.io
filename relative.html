@@ -25,12 +25,11 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Chathura|Atma|Coiny|Handlee|Modak|Playfair+Display|Roboto|Rum+Raisin" rel="stylesheet">
-    <!-- script -->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:700|Atma:500|Coiny|Handlee|Rum+Raisin&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <style>
  h1{
-	font-family: 'Modak', cursive;
+	font-family: 'Coiny', cursive;
 	font-size: 50px;
 }
   h2{
@@ -42,10 +41,6 @@
   }
 /*  */
 
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 ul {
   list-style-type: none;
@@ -100,7 +95,7 @@ nav ul li a.selected {
 <body onLoad="load()" onUnload="GUnload()" >
     <div id="preloader">
         <div id="status"></div>
-        <h2 style="color: #ffc600">Numbers are ALL around us!</h2>
+        <h2 style="color: #ffc600">Numbers are ALL around us! 🌍</h2>
       </div>
     <div class="container">
 
@@ -133,7 +128,58 @@ nav ul li a.selected {
     </div>      
 </div>
    <!-- break -->
-   <div style="background-color: transparent; height:200px;"><h1>Human Central Nervous System</h1></div>  
+   <div class="row" style="height:200px;"><h1>Human Central Nervous System</h1></div>  
+   <section class="container" style="background-color:transparent; height: 700px; overflow: hidden;">
+      <div class="css-slider-wrapper">
+          <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+          <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+          <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+          <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+          <div class="slider-pagination">
+            <label for="slider_1" class="page1"></label>
+            <label for="slider_2" class="page2"></label>
+            <label for="slider_3" class="page3"></label>
+            <label for="slider_4" class="page4"></label>
+          </div>
+          <div class="next control">
+            <label for="slider_1" class="numb1"><i><img src="images/right.png"></i></label>
+            <label for="slider_2" class="numb2"><i><img src="images/right.png"></i></label>
+            <label for="slider_3" class="numb3"><i><img src="images/right.png"></i></label>
+            <label for="slider_4" class="numb4"><i><img src="images/right.png"></i></label>
+          </div>
+          <div class="previous control">
+            <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"><img src="images/left.png"></i></label>
+            <label for="slider_2" class="numb2"><i><img src="images/left.png"></i></label>
+            <label for="slider_3" class="numb3"><i><img src="images/left.png"></i></label>
+            <label for="slider_4" class="numb4"><i><img src="images/left.png"></i></label>
+          </div>
+          <div class="slider slide1">
+            <div>
+             <h2>Problem</h2></br>
+                      <h3>The Increase in Tech has allowed for our Species to survive since the 'Stone Ages' </br> But at the same time, Technology has had deprieved people of using their brains capabilities, we lack the basic understanding of how powerful our Minds are. </br>Moe Techtainment aims to promote Experimental Learning in order to strengthen our Memory, Attention & Awareness</h3>
+                        <a href="" class="button">Keep going</a> </div>
+          </div>
+          <div class="slider slide2">
+            <div>
+             <h2>Evolution Of The Brain</h2></br>
+                      <h3>What makes our Species Intelligent beings is our ability to advance the evolution of our Brain. </br> </br> Theoritically most Humans are at Level 3; Logical Understanding </br> (as we work our way towards</br> Level 4; Stimulating the future). </br> </br>But in order to evolve we need to deduce the World around Us. And We do this by storing Memories.</h3>
+                       <a href="" class="button">Brain Evo</a> </div>
+          </div>
+          <div class="slider slide3">
+            <div>
+              <h2>Memory & Senses</h2></br>
+                      <h3>Memories are what validates our existence, whether its Subjective, Objective or Eternal. </br></br>Memories are what hold our understanding of the Universe together.</br> </br>But in order to really understand Reality --it starts with Education </br></br> & decoding the blueprint Life teases us with.</h3>
+                      <a href="" class="button">Dive into Relativity below</a> </div>
+          </div>
+          <div class="slider slide4">
+            <div>
+             <h2>Moe Techtainment</h2></br>
+                     <h3> My aspirations as an Advocate for Education is to influence others to love S.T.E.A.M </br>
+                      (Science, Tech, Engineer, Art & Math) </br></br>& its relationships with Reality easier and more fun to understand. </br></br> By using Sensory encoding processes & Experimental Learning 
+                      </h3>
+                      <a href="" class="button">Dive into Techtainment below</a> </div>
+          </div>
+    </section>
 <!-- STEAM -->
 <div class="row">
     <div style="height:50px;"></div>  
