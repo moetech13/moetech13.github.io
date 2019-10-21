@@ -25,7 +25,7 @@
 
 /* Mains */
 html, body{
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
 }
 /* Fonts */
@@ -63,14 +63,15 @@ h6 {
 }
 p {
   font-family: 'Handlee', cursive;
+  display: none;
 }
   
 a {
   font-family: 'Playfair Display', serif;
 }
-h1, h2, h3, h4, h5, h6, p, a {
-  color:rgb(113, 246, 90);
-}
+/* h1, h2, h3, h4, h5, h6, p, a {
+  color;
+} */
 .stroke{
   color: #ffffff;
   -webkit-text-stroke: 0.7px #ffc600;
@@ -79,8 +80,23 @@ h1, h2, h3, h4, h5, h6, p, a {
   -webkit-text-stroke: 0.7px #f382bf;
 }.strokeg{
   -webkit-text-stroke: 0.7px #67b31b;
-}.strokeb{
+}
+.strokeb{
   -webkit-text-stroke: 0.7px #3ecbec;
+}
+.strokebl{
+  -webkit-text-stroke: 0.7px #000;
+}
+#table {
+	display: table;
+	width: 100%;
+	height: 100%;
+  background-color: #e5e5e5;
+}
+
+#centeralign {
+	display: table-cell;
+	vertical-align: middle;
 }
 /* Text End */
 
@@ -96,6 +112,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   right: 0;
   top: 0;
   bottom: 0;
+  text-align: center;
 }
 /* Slider */
 .slider {
@@ -103,6 +120,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   height: 100%;
   background: red;
   position: absolute;
+  padding: 20px;
   left: 0;
   top: 0;
   opacity: 1;
@@ -147,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #FFF;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 45px;
   line-height: 120%;
   opacity: 0;
   -webkit-transform: translateX(500px);
@@ -171,13 +189,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   -webkit-transition-delay: 1s; /* Safari */
   transition-delay: 1s;
 }
-/* Next and Preive arrow */ 
+/* Next and Preive arrow 150 */ 
 .control {
   position: absolute;
   top: 30%;
-  width: 80px;
+  width: 50px;
   height: 50px;
-  margin-top: -150px;
+  margin-top: -75px;
   z-index: 55;
 }
 .control label {
@@ -187,10 +205,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   line-height: 50px;
   font-size: 50px;
   color: #FFF;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .control label:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .next {
   right: 1%;
@@ -201,7 +219,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 /* Slider Pagger */ 
 .slider-pagination {
   position: absolute;
-  bottom: 9px;
+  bottom: 20px;
   width: 100%;
   left: 0;
   text-align: center;
@@ -272,7 +290,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   padding: 0 2%
 }
 .control label {
-  font-size: 25px;
+  font-size: 35px;
 }
 .slider .button {
   padding: 0 15px;
