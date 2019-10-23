@@ -41,53 +41,6 @@
   }
 /*  */
 
-
-ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-nav {
-  position: relative;
-}
-nav ul {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-}
-nav ul li {
-  width: 20%;
-  text-align: center;
-}
-nav ul li a {
-  display: flex;
-  justify-content: center;
-  color: slategrey;
-  transition: all .15s ease;
-}
-nav ul li a:hover {
-  color: #434d57;
-  transition: all .15s ease;
-}
-nav ul li a.selected {
-  transition: all .15s ease;
-  color: white;
-}
-/* original position is absolute */
-#navActiveBG {
-  position: relative;
-  top: 14px;
-  width: 20%;
-  height: 24px;
-  background: yellow;
-  border-radius: 4px;
-  transition: -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
-  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
-  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5), -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
-  will-change: transform;
-  z-index: -1;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
   </style>
 </head>
 <div class="particle-network-animation"></div>
@@ -95,12 +48,11 @@ nav ul li a.selected {
     <div id="preloader">
         <div id="status"></div>
         <h2 style="color:#ffc600;">One Synapse at a Time 🌙</h2>
-      </div>
-    <div class="container">
-
-  <div class="col-md-12" style="text-align: center;">
+    </div>
+  <div class="container">
 <!-- Header -->
-<div><img class="floating" src="images/moetech.png" height="150px"> </div>
+  <div class="col-md-12" style="text-align: center;">
+        <div><img class="floating" src="images/moetech.png" height="150px"> </div>
 <div style="height:150px;"></div>
 
     <div class="container">
@@ -108,7 +60,7 @@ nav ul li a.selected {
         <header class="skill-card__header" style="background-color: #0092b3;"><video class="skill-card__icon" id="video" autoplay muted loop  alt="what is Relativity" src="images/mtechtainment.MOV"></video>  
         </header>
         <section class="skill-card__body">
-          <h2 class="skill-card__title">Relativity</h2><span class="skill-card__duration">6</span>
+          <h2 class="skill-card__title">Techtainment</h2><span class="skill-card__duration">6</span>
           
           <ul class="skill-card__knowledge">
               <a href="#" class="action-button shadow red"> </a>
@@ -128,9 +80,9 @@ nav ul li a.selected {
       </div>      
 </div>
  <!-- break -->
- <div class="row" style="text-align: center; height:200px;">
-  <div id="table">
-      <div id="centeralign">
+ <div class="row" style="text-align:center; height:100;">
+  <div>
+      <div>
         <h1>MOe Techtainment</h1>
         <p>The Increase in Tech has allowed for our Species to survive since the 'Stone Ages'
             But at the same time, Technology has deprived us of using our brain's fullest capabilities. Because we rely on it so much. 
@@ -142,14 +94,15 @@ nav ul li a.selected {
 
 </div>  
  <!-- M -->
- <div class="row">
+<section id="table">
+ <div class="row" id="centeralign">
     <div style="height:50px;"></div>  
  
    <div class="col-md-12">
       <div class="skill-card" >
-          <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
+          <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/cog.png" height="100px;"/></header>
           <section class="skill-card__body">
-            <h2 class="skill-card__title">Cognitive Education</h2><span class="skill-card__duration"><p>Use your Senses to Strengthen your Knowledge</p></span>
+            <h2 class="skill-card__title">Cognitive Education</h2><span class="skill-card__duration"><p>Cognitive Learning is a type of learning that is active, constructive, and long-lasting. It engages students in the learning processes, teaching them to use their brains more effectively to make connections when learning new things</p></span>
             <ul class="skill-card__knowledge">
                 <a href="#" class="action-button shadow animate" style="background-color: #0092B3;">📐 </a>
             </ul>
@@ -157,65 +110,93 @@ nav ul li a.selected {
         </div>
     </div>
   <!-- . -->
-<div class="row">
-        <div class="col">
+ 
+<div class="row col-12">
+        <div class="col-3">
             <figure class="snip1446">
-                <img src="images/0092b3.png" alt="sample15" />
+                <img src="images/0092b3.png" />
                 <figcaption>
-                  <h2>1</h2> </br> </br>
-                  <p>Memory.</p>
+                  <h2>Sensing</h2> </br> </br>
+                  <p>Realistic & Focused on Facts. Relys on common sense & past experiences to find solutions</p>
                 </figcaption>
               </figure>
         </div>
-        <div class="col">
+        <div class="col-3">
             <figure class="snip1446">
-                <img src="images/0092b3.png" alt="sample15" />
+                <img src="images/0092b3.png"/>
                 <figcaption>
-                  <h2>2</h2> </br> </br>
-                  <p>Synapses</p>
+                  <h2>Thinking</h2> </br> </br>
+                  <p>Making decisions based on Logic, highy objective, values honesty, consistency and fairness. </p>
                 </figcaption>
               </figure>
         </div>
-        <div class="col">
+        <div class="col-3">
             <figure class="snip1446">
-                <img src="images/0092b3.png" alt="sample15" />
+                <img src="images/0092b3.png"/>
                 <figcaption>
-                  <h2>3</h2> </br> </br>
-                  <p>Senses</p>
+                  <h2>Extraversion</h2> </br> </br>
+                  <p>Action-oriented, frequent socializing, & are energized after spending time with people.</p>
                 </figcaption>
               </figure>
         </div>
-        <div class="col">
+        <div class="col-3">
             <figure class="snip1446">
-                <img src="images/0092b3.png" alt="sample15" />
+                <img src="images/0092b3.png"/>
                 <figcaption>
-                  <h2>4</h2> </br> </br>
-                  <p>Attention/Awareness</p>
+                  <h2>Judging</h2> </br> </br>
+                  <p>Organized + Prepared, Meticulous, comfortable following rules.</p>
                 </figcaption>
               </figure>
         </div>
-        <div class="col">
+      </div>
+      <div class="row col-12" style="text-align:center;">
+        <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+        <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+        <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+        <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+      </div>
+      <div class="row col-12" style="text-align:center;">
+        <div class="col-3">
             <figure class="snip1446">
-                <img src="images/0092b3.png" alt="sample15" />
+                <img src="images/0092b3.png" />
                 <figcaption>
-                  <h2>5</h2> </br> </br>
-                  <p>Encoding</p>
+                  <h2>Intuition</h2> </br> </br>
+                  <p>Attention/Awareness Big Picture, Innovative, Creative Problem Solving, easily finds Patterns </p>
                 </figcaption>
               </figure>
         </div>
-        <div class="col">
+        <div class="col-3">
             <figure class="snip1446">
-                <img src="images/0092b3.png" alt="sample15" />
+                <img src="images/0092b3.png"/>
                 <figcaption>
-                  <h2>6</h2> </br> </br>
-                  <p>Recall.</p>
+                  <h2>Feeling</h2> </br> </br>
+                  <p>Sensitive & Cooperative, makes decisions relative to personal values how people will be affecter by their actions</p>
                 </figcaption>
               </figure>
         </div>
+        <div class="col-3">
+            <figure class="snip1446">
+                <img src="images/0092b3.png" />
+                <figcaption>
+                  <h2>Intraversion</h2> </br> </br>
+                  <p>Thought-oriented, enjoys deep and meaningful interactions and recharge through solitude</p>
+                </figcaption>
+              </figure>
+        </div>
+        <div class="col-3">
+            <figure class="snip1446">
+                <img src="images/0092b3.png"/>
+                <figcaption>
+                  <h2>Perceiving</h2> </br> </br>
+                  <p>Entertaining multiple options, the freedom to act spontaneously. Flexible around any plans made.</p>
+                </figcaption>
+              </figure>
+        </div>
+      </div>
   </div>
-
+</section>
   <div style="height:150px;"></div>  
-  </div>
+  
   <!-- ... -->
                   <!-- break Grid-->
                   
@@ -270,78 +251,108 @@ nav ul li a.selected {
       </section>
       <div style="height:100px;"></div>  
       <!-- M -->
-      <div class="row">
-      </br></br>
-        <div class="col-md-12">
-           <div class="skill-card" >
-               <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
-               <section class="skill-card__body">
-                 <h2 class="skill-card__title">Neuroplasticity</h2><span class="skill-card__duration"><p>Do methods such as the Loci Method (Memory Palace) work</p></span>
-                 <ul class="skill-card__knowledge">
-                     <a href="#" class="action-button shadow" style="background-color: #0092B3;">📐 </a>
-                 </ul>
-               </section>
+      <section>
+          <div class="row">
+             <div style="height:50px;"></div>  
+          
+            <div class="col-md-12">
+               <div class="skill-card" >
+                   <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/cog.png" height="100px;"/></header>
+                   <section class="skill-card__body">
+                     <h2 class="skill-card__title">Cognitive Education</h2><span class="skill-card__duration"><p>Cognitive Learning is a type of learning that is active, constructive, and long-lasting. It engages students in the learning processes, teaching them to use their brains more effectively to make connections when learning new things</p></span>
+                     <ul class="skill-card__knowledge">
+                         <a href="#" class="action-button shadow animate" style="background-color: #0092B3;">📐 </a>
+                     </ul>
+                   </section>
+                 </div>
              </div>
-         </div>
-       <!-- . -->
-       <div class="row">
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/0092b3.png" />
-                 <figcaption>
-                   <h2>1</h2> </br> </br>
-                   <p>Memory.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-            <figure class="snip1446">
-                <img src="images/0092b3.png" />
-                <figcaption>
-                  <h2>2</h2> </br> </br>
-                  <p>Synapses</p>
-                </figcaption>
-              </figure>
-        </div>
-        <div class="col">
-            <figure class="snip1446">
-                <img src="images/0092b3.png" />
-                <figcaption>
-                  <h2>3</h2> </br> </br>
-                  <p>Senses</p>
-                </figcaption>
-              </figure>
-        </div>
-        <div class="col">
-            <figure class="snip1446">
-                <img src="images/0092b3.png"  />
-                <figcaption>
-                  <h2>4</h2> </br> </br>
-                  <p>Attention/Awareness</p>
-                </figcaption>
-              </figure>
-        </div>
-        <div class="col">
-            <figure class="snip1446">
-                <img src="images/0092b3.png"  />
-                <figcaption>
-                  <h2>5</h2> </br> </br>
-                  <p>Encoding</p>
-                </figcaption>
-              </figure>
-        </div>
-        <div class="col">
-            <figure class="snip1446">
-                <img src="images/0092b3.png" />
-                <figcaption>
-                  <h2>6</h2> </br> </br>
-                  <p>Recall.</p>
-                </figcaption>
-              </figure>
-        </div>
-       </div>
-     <!-- End -->
-     </div>
+           <!-- . -->
+          
+         <div class="row col-12">
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png" />
+                         <figcaption>
+                           <h2>Sensing</h2> </br> </br>
+                           <p>Realistic & Focused on Facts. Relys on common sense & past experiences to find solutions</p>
+                         </figcaption>
+                       </figure>
+                 </div>
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png"/>
+                         <figcaption>
+                           <h2>Thinking</h2> </br> </br>
+                           <p>Making decisions based on Logic, highy objective, values honesty, consistency and fairness. </p>
+                         </figcaption>
+                       </figure>
+                 </div>
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png"/>
+                         <figcaption>
+                           <h2>Extraversion</h2> </br> </br>
+                           <p>Action-oriented, frequent socializing, & are energized after spending time with people.</p>
+                         </figcaption>
+                       </figure>
+                 </div>
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png"/>
+                         <figcaption>
+                           <h2>Judging</h2> </br> </br>
+                           <p>Organized + Prepared, Meticulous, comfortable following rules.</p>
+                         </figcaption>
+                       </figure>
+                 </div>
+               </div>
+               <div class="row col-12" style="text-align:center;">
+                 <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+                 <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+                 <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+                 <div class="col-3"><img src="images/syn1.gif" height="70"></div>
+               </div>
+               <div class="row col-12" style="text-align:center;">
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png" />
+                         <figcaption>
+                           <h2>Intuition</h2> </br> </br>
+                           <p>Attention/Awareness Big Picture, Innovative, Creative Problem Solving, easily finds Patterns </p>
+                         </figcaption>
+                       </figure>
+                 </div>
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png"/>
+                         <figcaption>
+                           <h2>Feeling</h2> </br> </br>
+                           <p>Sensitive & Cooperative, makes decisions relative to personal values how people will be affecter by their actions</p>
+                         </figcaption>
+                       </figure>
+                 </div>
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png" />
+                         <figcaption>
+                           <h2>Intraversion</h2> </br> </br>
+                           <p>Thought-oriented, enjoys deep and meaningful interactions and recharge through solitude</p>
+                         </figcaption>
+                       </figure>
+                 </div>
+                 <div class="col-3">
+                     <figure class="snip1446">
+                         <img src="images/0092b3.png"/>
+                         <figcaption>
+                           <h2>Perceiving</h2> </br> </br>
+                           <p>Entertaining multiple options, the freedom to act spontaneously. Flexible around any plans made.</p>
+                         </figcaption>
+                       </figure>
+                 </div>
+               </div>
+           </div>
+         </section>
+         
      <!-- break -->
      <div style="height:150px;"></div>  
      <div class="col-12"> 

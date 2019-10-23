@@ -1,22 +1,24 @@
+
 <!Doctype html>
 <html>
 <head>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146899361-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'UA-146899361-1');
 </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Mouminatou, Moe Techtainment,HTML,CSS,Cognitive,JavaScript, Physics, Barry,Leader, STEM,STEAM">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, Mouminatou, Barry,Leader, Moe Techtainment">
     <meta name="author" content="Mouminatou Barry">
   <title>MOe Techtainment</title>
     <!--Icon-->
-    <link rel="icon" type="image/png" href="images/TransLogo.png">
+    <link style="" rel="icon" type="image/png" href="images/TransLogo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -25,65 +27,77 @@
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:700|Atma:500|Coiny|Handlee|Rum+Raisin&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <style>
-
-  h1,  h2{
-  font-family: 'Rum Raisin', sans-serif;
-    color: #ffffff;
+  <style>
+ h1{
+	font-family: 'Coiny', cursive;
+	font-size: 50px;
+}
+  h2{
+	font-family: 'Rum Raisin', sans-serif;
+  font-size: 15px;
   }
-  h3{
-	font-family: 'Arima Madurai', cursive;
-    color: #ffffff;
-    font-size: 20px;
-}
-h4{
-  font-family: 'Chathura', sans-serif;
-}
-h5{
-  font-family: 'Atma', cursive;
-}
-h6{
-	font-family: 'Roboto', sans-serif;
-}
-p{
-  font-family: 'Handlee', cursive;
-}
-#strip
-{
-background-color: #B45ee0;
-height: 100px;
-width: 50px;
-};
+  p{
+    font-size: 10px;
+  }
 /*  */
-div{
-  background-color: transparent;
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
-.iframe-container{
+nav {
   position: relative;
-  width:100%;
-  top:0;
-  height:0;
 }
-.iframe-container{
+nav ul {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav ul li {
+  width: 20%;
+  text-align: center;
+}
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  color: slategrey;
+  transition: all .15s ease;
+}
+nav ul li a:hover {
+  color: #434d57;
+  transition: all .15s ease;
+}
+nav ul li a.selected {
+  transition: all .15s ease;
+  color: white;
+}
+/* original position is absolute */
+#navActiveBG {
   position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+  top: 14px;
+  width: 20%;
+  height: 24px;
+  background: yellow;
+  border-radius: 4px;
+  transition: -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
+  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
+  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5), -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
+  will-change: transform;
+  z-index: -1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-/* Shine */
+
   </style>
 </head>
-
 <div class="particle-network-animation"></div>
 <body style="background-color: transparent;" onLoad="load()" onUnload="GUnload()" >
     <div id="preloader">
         <div id="status"></div>
         <h2 style="color: #ffc600">Numbers are ALL around us! 🌍</h2>
       </div>
-<div class="container">
+    <div class="container">
 
 <div class="col-md-12" >
 <!-- Header -->
@@ -103,16 +117,18 @@ div{
             </section>
           </div>
     </div>
+
 <div style="background-color:transparent; height:30px;"></div>  
 </div>
 <!-- Header done -->
 <div class="container col-md-12" style="background-color:#67B31B; text-align:center;"> 
+
     <div class="row" style="text-align:center;" >
       <iframe width="100%" height="300" frameborder="0" src="https://prezi.com/view/23czGhn9H06t8V3Ql3T2/embed"></iframe>
     </div>      
 </div>
    <!-- break -->
-   <div class="container" style="height:150px; text-align:center;"><h1>Human Central Nervous System</h1></div>  
+   <div class="row" style="height:200px;"><h1>Human Central Nervous System</h1></div>  
    <section class="container" style="background-color:transparent; height: 700px; overflow: hidden;">
       <div class="css-slider-wrapper">
           <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
@@ -144,14 +160,14 @@ div{
                         <a href="" class="button">Keep going</a> </div>
           </div>
           <div class="slider slide2" style="background-color:#000;" >
+          
               <iframe width="100%" height="100%" frameborder="0" src="brain.html"></iframe>  
           </div>
           <div class="slider slide3">
             <div>
               <h2>Memory & Senses</h2></br>
                       <h3>Memories are what validates our existence, whether its Subjective, Objective or Eternal. </br></br>Memories are what hold our understanding of the Universe together.</br> </br>But in order to really understand Reality --it starts with Education </br></br> & decoding the blueprint Life teases us with.</h3>
-                      <a href="" class="button">Dive into Relativity below</a> 
-            </div>
+                      <a href="" class="button">Dive into Relativity below</a> </div>
           </div>
           <div class="slider slide4">
             <div>
@@ -159,19 +175,16 @@ div{
                      <h3> My aspirations as an Advocate for Education is to influence others to love S.T.E.A.M </br>
                       (Science, Tech, Engineer, Art & Math) </br></br>& its relationships with Reality easier and more fun to understand. </br></br> By using Sensory encoding processes & Experimental Learning 
                       </h3>
-                      <a href="" class="button">Dive into Techtainment below</a>
+                      <a href="" class="button">Dive into Techtainment below</a> </div>
           </div>
-          </div>
-        </div>
     </section>
 <!-- STEAM -->
-<section>
-<div class="container">
-    <div style="background-color: transparent; height:200px;"></div>  
+<div class="row">
+    <div style="background-color: transparent; height:50px;"></div>  
    <!-- . -->
-   <div class="container" style="text-align:center;"> 
+   <div class="col-md-12">
       <div class="skill-card">
-        <header class="skill-card__header" style="background-color: #B70000;"><img class="skill-card__icon" src="images/s.PNG" /></header>
+        <header class="skill-card__header" style="background-color: #B70000;"><img class="skill-card__icon" src="images/s.PNG" alt="HTML5 Logo"/></header>
         <section class="skill-card__body">
           <h2 class="skill-card__title">SCIENCE</h2><span class="skill-card__duration"><p>Sci Q:is a systematic enterprise that builds </br> and organizes knowledge in the form of testable explanations and predictions about the universe</p></span>
           <ul class="skill-card__knowledge">
@@ -179,15 +192,24 @@ div{
           </ul>
         </section>
       </div>
-  </div>
-  <!-- 1 -->
-  <div class="row">
-       <div class="col">
+    </div>
+  <!-- . -->
+<div class="row">
+    <div class="col">
+        <figure class="snip1446">
+            <img src="images/moetechsci.gif" />
+            <figcaption>
+              <h2>Pelican Steve</h2>
+              <p>data</p>
+            </figcaption>
+          </figure>
+    </div>
+    <div class="col">
         <figure class="snip1446">
             <img src="images/b70000.png"/>
             <figcaption>
               <h2>Galileo Galillei</h2>
-              <p>Favorite Scientist.</p>
+              <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
               <div class="icons"><a href="https://www.biography.com/scholar/galileo"><i class="ion-chatbubbles"></i></a>
               </br>  <a href="#" class="action-button shadow animate red"> </a>
               </div>
@@ -196,25 +218,14 @@ div{
     </div>
     <div class="col">
         <figure class="snip1446">
-            <img src="images/moetechsci.gif" />
-            <figcaption>
-              <h2>1</h2>
-              <p>data</p>
-            </figcaption>
-          </figure>
-    </div>
- 
-    <div class="col">
-        <figure class="snip1446">
             <img src="images/b70000.png"  />
             <figcaption>
               <h2>Sir Isaac Newton</h2>
+                <button><p>toyu</p></button>
+                <a href="#" class="action-button shadow animate red"> </a>
             </figcaption>
           </figure>
     </div>
-  </div>
-  <!-- 2 -->
-  <div class="row">
     <div class="col">
         <figure class="snip1446">
             <img src="images/b70000.png" />
@@ -245,96 +256,96 @@ div{
             </figcaption>
           </figure>
     </div>
-  </div> 
+</div>  
 </div>
     <!-- break -->
- 
-    <!-- draft -->
+    <div style="background-color: transparent; height:100px;"></div>  
     <!-- T -->
-    <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
-        <!-- . -->
-        <div class="container col-md-12">
-            <div class="skill-card" >
-                <header class="skill-card__header" style="background-color: #FA61B3;"><img class="skill-card__icon" src="images/t.PNG" alt="HTML5 Logo"/></header>
-                <section class="skill-card__body">
-                  <h2 class="skill-card__title">TECHNOLOGY</h2><span class="skill-card__duration"><p>Tech Q: is the collection of techniques, skills, methods, </br> and processes used in the production of goods or services or in the accomplishment of objectives</p></span>
-                  <ul class="skill-card__knowledge">
-                      <a href="#" class="action-button shadow animate" style="background-color: #FA61B3;">🔭</a>
-                  </ul>
-                </section>
-              </div>
-         </div>
-       <!-- E1 -->
-     <div class="row">
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png" />
-                 <figcaption>
-                   <h2>eng</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/moetechtech.gif"/>
-                 <figcaption>
-                   <h2>art</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png"/>
-                 <figcaption>
-                   <h2>art</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-        </div>
-        <!-- E2 -->
-        <div class="row">
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png" />
-                 <figcaption>
-                   <h2>art</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png"/>
-                 <figcaption>
-                   <h2>art</h2>
-                   <p>data.</p>
-                 
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-            <figure class="snip1446">
-                <img src="images/fa61b3.png" />
-                <figcaption>
-                  <h2>art</h2>
-                  <p>data.</p>
-                
-                </figcaption>
-              </figure>
-        </div>
-        </div>
-     </div>
-    <!-- break -->
-   
-    <!-- E -->
-    <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
+<div class="row">
     <!-- . -->
-    <div class="container">
+    <div class="col-md-12">
+        <div class="skill-card" >
+            <header class="skill-card__header" style="background-color: #FA61B3;"><img class="skill-card__icon" src="images/t.PNG" alt="HTML5 Logo"/></header>
+            <section class="skill-card__body">
+              <h2 class="skill-card__title">TECHNOLOGY</h2><span class="skill-card__duration"><p>Tech Q: is the collection of techniques, skills, methods, </br> and processes used in the production of goods or services or in the accomplishment of objectives</p></span>
+              <ul class="skill-card__knowledge">
+                  <a href="#" class="action-button shadow animate" style="background-color: #FA61B3;">🔭</a>
+              </ul>
+            </section>
+          </div>
+     </div>
+   <!-- . -->
+ <div class="row">
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/moetechtech.gif" alt="sample15" />
+             <figcaption>
+               <h2>Ada Lovelace</h2>
+               <p>Input Data here</p>
+        
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/fa61b3.png" alt="sample15" />
+             <figcaption>
+               <h2>Alan Turning`</h2>
+               <p>Input Data Here</p>
+             
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/fa61b3.png" alt="sample15" />
+             <figcaption>
+               <h2>Input data here</h2>
+               <p.</p>
+               
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/fa61b3.png" alt="sample15" />
+             <figcaption>
+               <h2>moee</h2>
+               <p>input data here.</p>
+             
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/fa61b3.png" alt="sample15" />
+             <figcaption>
+               <h2>moe</h2>
+               <p>Input data here</p>
+             
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+        <figure class="snip1446">
+            <img src="images/fa61b3.png" alt="sample15" />
+            <figcaption>
+              <h2>Printing Press</h2>
+              <p>With it what would be be writing on?</p>
+           
+            </figcaption>
+          </figure>
+    </div>
+     </div>
+ 
+   </div>
+ 
+     <!-- break -->
+     <div style="background-color:transparent; height:50px;"></div>  </br></br>
+    <!-- E -->
+<div class="row">
+    <!-- . -->
+    <div class="col-md-12">
             <div class="skill-card" >
               <header class="skill-card__header" style="background-color: #67B31B;"><img class="skill-card__icon" src="images/e.PNG" alt="HTML5 Logo"/></header>
               <section class="skill-card__body">
@@ -345,20 +356,11 @@ div{
               </section>
             </div>
      </div>
-   <!-- E1 -->
+   <!-- . -->
  <div class="row">
-       <div class="col">
+     <div class="col">
          <figure class="snip1446">
-             <img src="images/67b31b.png"/>
-             <figcaption>
-               <h2>art</h2>
-               <p>data.</p>
-             </figcaption>
-           </figure>
-     </div>
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/moetecheng.gif" />
+             <img src="images/moetecheng.gif" alt="sample15" />
              <figcaption>
                <h2>eng</h2>
                <p>data.</p>
@@ -367,19 +369,7 @@ div{
      </div>
      <div class="col">
          <figure class="snip1446">
-             <img src="images/67b31b.png"/>
-             <figcaption>
-               <h2>art</h2>
-               <p>data.</p>
-             </figcaption>
-           </figure>
-     </div>
-    </div>
-    <!-- E2 -->
-    <div class="row">
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/67b31b.png" />
+             <img src="images/67b31b.png" alt="sample15" />
              <figcaption>
                <h2>art</h2>
                <p>data.</p>
@@ -388,7 +378,25 @@ div{
      </div>
      <div class="col">
          <figure class="snip1446">
-             <img src="images/67b31b.png"/>
+             <img src="images/67b31b.png" alt="sample15" />
+             <figcaption>
+               <h2>art</h2>
+               <p>data.</p>
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/67b31b.png" alt="sample15" />
+             <figcaption>
+               <h2>art</h2>
+               <p>data.</p>
+             </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/67b31b.png" alt="sample15" />
              <figcaption>
                <h2>art</h2>
                <p>data.</p>
@@ -398,7 +406,7 @@ div{
      </div>
      <div class="col">
         <figure class="snip1446">
-            <img src="images/67b31b.png" />
+            <img src="images/67b31b.png" alt="sample15" />
             <figcaption>
               <h2>art</h2>
               <p>data.</p>
@@ -406,13 +414,16 @@ div{
             </figcaption>
           </figure>
     </div>
-    </div>
- </div>
+     </div>
+ 
+   </div>
+ 
+     <!-- break -->
+     <div style="background-color: transparent; height:50px;"></div>  </br></br>
      <!-- A -->
-     <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
+<div class="row">
     <!-- . -->
-    <div class="container">
+    <div class="col-md-12">
         <div class="skill-card" >
             <header class="skill-card__header" style="background-color: #FFCA3D;"><img class="skill-card__icon" src="images/a.PNG" alt="HTML5 Logo"/></header>
             <section class="skill-card__body">
@@ -427,7 +438,7 @@ div{
  <div class="row">
      <div class="col">
          <figure class="snip1446">
-             <img src="images/ffca3d.png"/>
+             <img src="images/moetechart.gif" alt="sample15" />
              <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -435,20 +446,19 @@ div{
               </figcaption>
            </figure>
      </div>
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/moetechart.gif" />
-             <figcaption>
-                <h2>Content</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-    
      <div class="col">
          <figure class="snip1446">
-             <img src="images/ffca3d.png"/>
+             <img src="images/ffca3d.png" alt="sample15" />
+             <figcaption>
+                <h2>Content</h2>
+                <p>data</p>
+              </br>
+              </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/ffca3d.png" alt="sample15" />
              <figcaption>
                <h2>art</h2>
                <p>data.</p>
@@ -459,12 +469,9 @@ div{
                 </figcaption>
            </figure>
      </div>
-    </div>
-    
-    <div class="row">
      <div class="col">
          <figure class="snip1446">
-             <img src="images/ffca3d.png"/>
+             <img src="images/ffca3d.png" alt="sample15" />
              <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -474,7 +481,7 @@ div{
      </div>
      <div class="col">
          <figure class="snip1446">
-             <img src="images/ffca3d.png" />
+             <img src="images/ffca3d.png" alt="sample15" />
              <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -484,7 +491,7 @@ div{
      </div>
      <div class="col">
         <figure class="snip1446">
-            <img src="images/ffca3d.png"/>
+            <img src="images/ffca3d.png" alt="sample15" />
             <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -492,13 +499,15 @@ div{
               </figcaption>
           </figure>
     </div>
-    </div>
- </div>
+     </div>
+ 
+   </div>
+     <!-- break -->
+     <div style="background-color:transparent; height:50px;"></div>  </br></br>
      <!-- M -->
-     <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
+<div class="row">
     <!-- . -->
-    <div class="row">
+    <div class="col-md-12">
         <div class="skill-card" >
             <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
             <section class="skill-card__body">
@@ -511,43 +520,9 @@ div{
      </div>
    <!-- . -->
  <div class="row">
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/0092b3.png"/>
-             <figcaption>
-                <h2>Content</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/moetechmath.gif"/>
-             <figcaption>
-                <h2>Content</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-   
      <div class="col">
          <figure class="snip1446">
-             <img src="images/0092b3.png" />
-             <figcaption>
-                <h2>Content</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-    </div>
-
-     <div class="row">
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/0092b3.png" />
+             <img src="images/moetechmath.gif" alt="sample15" />
              <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -557,7 +532,37 @@ div{
      </div>
      <div class="col">
          <figure class="snip1446">
-             <img src="images/0092b3.png"/>
+             <img src="images/0092b3.png" alt="sample15" />
+             <figcaption>
+                <h2>Content</h2>
+                <p>data</p>
+              </br>
+              </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/0092b3.png" alt="sample15" />
+             <figcaption>
+                <h2>Content</h2>
+                <p>data</p>
+              </br>
+              </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/0092b3.png" alt="sample15" />
+             <figcaption>
+                <h2>Content</h2>
+                <p>data</p>
+              </br>
+              </figcaption>
+           </figure>
+     </div>
+     <div class="col">
+         <figure class="snip1446">
+             <img src="images/0092b3.png" alt="sample15" />
              <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -567,7 +572,7 @@ div{
      </div>
      <div class="col">
         <figure class="snip1446">
-            <img src="images/0092b3.png" />
+            <img src="images/0092b3.png" alt="sample15" />
             <figcaption>
                 <h2>Content</h2>
                 <p>data</p>
@@ -576,9 +581,10 @@ div{
           </figure>
     </div>
      </div>
-</div>
- </section>
-     <!--footer-->
+ 
+   </div>
+ 
+     <!-- break -->
 <div style="background:transparent;  height:50px;"></div>  
   <!-- . -->  
   <div class="col-12"> 
@@ -601,16 +607,10 @@ div{
  <!-- END -->
  </div>
 <!-- JS -->
-<!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/style.js"></script>
-<script type="text/javascript">
-$('.carousel').carousel();
-// 
-
-</script>  
+  
 </body>
 </html>
 
