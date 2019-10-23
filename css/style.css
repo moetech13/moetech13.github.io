@@ -42,7 +42,7 @@ h2 {
   font-size: 15px;
   text-align: center;}
 h2 span {
-  top: -5px;
+  top: -15px;
   opacity: 0;
   position: relative;
 }
@@ -121,9 +121,9 @@ a {
 .slider {
   width: 100%;
   height: 100%;
-  background: red;
+  background: transparent;
   position: absolute;
-  padding: 20px;
+  /* padding: 20px; */
   left: 0;
   top: 0;
   opacity: 1;
@@ -143,9 +143,9 @@ a {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* each slide backgound color slide1:f382bf */  
+/* each slide backgound color slide1: b70000*/  
 .slide1 {
-  background: #b70000;
+  background: #fa61b3;
   left: 0;
 }
 .slide2 {
@@ -166,9 +166,9 @@ a {
 /* Slider inner slide effect */
 .slider h2 {
   color: #FFF;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 120%;
   opacity: 0;
   -webkit-transform: translateX(500px);
@@ -208,7 +208,7 @@ a {
   line-height: 50px;
   font-size: 50px;
   color: #FFF;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .control label:hover {
   opacity: 0.7;
@@ -394,7 +394,24 @@ a {
     opacity: 0;
   }
 } */
-/* Nav */
+div{
+  background-color: transparent;
+}
+/* Video HTML Frames */
+.iframe-container{
+  position: relative;
+  width:100%;
+  top:0;
+  height:0;
+}
+.iframe-container{
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 /* Nav */
 ul {
   list-style-type: none;
@@ -547,18 +564,6 @@ nav li:last-child a:after
     background-color:#0092b3;
 }
 
-
-/* Text Boxes */
-
-.img{
-  margin-top: 2rem;
-  padding: 3px;
-  border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(8, 106, 203, 0.11), 0 1px 3px rgba(208, 183, 17, 0.08);
-  height: 200px;
-}
-/* text boxes end */
-
 /* text FLYINNNNNN */
 
 
@@ -594,7 +599,7 @@ nav li:last-child a:after
       transform: translateY(-50%) translateX(-50%);
 	padding: 20px;
 	width: 220px;
-	background-color: #FFF;
+	background-color: transparent;
 	box-shadow: 0 1px 3px rgba(241, 236, 236, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
   .skill-card:hover {
@@ -655,17 +660,17 @@ nav li:last-child a:after
 	transition: transform 0.5s, -webkit-transform 0.5s;
   }
   .skill-card .skill-card__body {
-	height: 40px;
+	height: 50px;
 	transition: height 0.5s;
 	overflow: hidden;
 	text-align: center;
 	
   }
   .skill-card .skill-card__body .skill-card__title {
-	font-size: 1.4em;
+	font-size: 20px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color:#000000;
+	color:#fff;
   }
   .skill-card .skill-card__body .skill-card__duration {
 	color: #9E9E9E;
@@ -693,7 +698,7 @@ nav li:last-child a:after
     color: #ffffff;
     text-align: center;
     font-size: 6px;
-    left: 13%;
+    left: 3%;
   }
   .snip1446 * {
     -webkit-box-sizing: border-box;
@@ -797,7 +802,7 @@ nav li:last-child a:after
   }
   .snip1446:hover figcaption p,
   .snip1446.hover figcaption p {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   /*  */
 
