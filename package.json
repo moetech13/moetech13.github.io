@@ -1,0 +1,57 @@
+{
+  "name": "moetech13.github.io",
+  "version": "1.0.0",
+  "description": "Moe Techtainment uses Cognitive & Experimental Learning to help make S.T.E.A.M (Science, Tech, Engineering, Arts, Math) Fun & Creative. Let's strengthen our Encoding processes One Synapse at a Time!  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moetech13/moetech13.github.io.git"
+  },
+  "keywords": [
+    "Mouminatou",
+    "Barry",
+    "Moe",
+    "Techtainment",
+    "Cognitive",
+    "Learning",
+    "Thought",
+    "Experiment",
+    "STEM",
+    "STEAM",
+    "Physics",
+    "Philosophy",
+    "Science",
+    "Engineering",
+    "Arts",
+    "Math",
+    "Tech",
+    "Fun",
+    "Creative",
+    "Synapse",
+    "Nerd",
+    "Gerd",
+    "Nucleuos",
+    "Cell",
+    "Education",
+    "Smart",
+    "Relative",
+    "explore",
+    "Chess",
+    "Queen",
+    "Chess",
+    "Basketball",
+    "Golden",
+    "Ration",
+    "Fibonacci",
+    "Queen"
+  ],
+  "author": "Mouminatou Barry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moetech13/moetech13.github.io/issues"
+  },
+  "homepage": "https://github.com/moetech13/moetech13.github.io#readme"
+}
