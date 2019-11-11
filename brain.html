@@ -7,10 +7,12 @@
     stroke-dashoffset: 0;
   }
 }
+/* @media only screen and (max-width: 200px) {} */
 .tdc-main {
   height: 100vh;
   width: 100%;
 }
+
 .tdc-main-left {
   width: 20%;
   float: left;
@@ -26,12 +28,12 @@ background: transparent;
   padding: 10px;
 }
 .tdc-main-left-wrapper-info .tdc-info-title {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
 
 }
 .tdc-main-left-wrapper-info .tdc-info-description {
-  font-size: 20px;
+  font-size: 15px;
   color:#0092b3;
 }
 /*  */
@@ -88,16 +90,16 @@ background: transparent;
   background: #b81434;
 }
 .tdc-main-right-demo {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 .tdc-main-right-demo-brain {
   position: relative;
   float: right;
-  right: 100px;
-  width: 300px;
-  height: 330px;
-  top: calc(50% - 450px/2);
+  right: 50px;
+  width: 100px;
+  height: 130px;
+  top: calc(50% - 150px/2);
   display: block;
 }
 .tdc-main-right-demo-brain:hover svg {
@@ -108,7 +110,7 @@ background: transparent;
   cursor: pointer;
 }
 .tdc-main-right-demo-brain .tdc-brain-part svg {
-  width: 200px;
+  width: 100px;
   fill: white;
   stroke: #ffc600;
   transform: scale(1);
@@ -133,56 +135,59 @@ background: transparent;
   fill: #00bcd4;
 }
 .tdc-main-right-demo-brain .tdc-cerebellum {
-  top: 235px;
-  left: 215px;
+  top: 115px;
+  left: 115px;
 }
 .tdc-main-right-demo-brain .tdc-cerebellum svg {
-  width: 160px;
+  width: 80px;
 }
 .tdc-main-right-demo-brain .tdc-cerebellum:hover svg, .tdc-main-right-demo-brain .tdc-cerebellum.active svg {
   fill: #00aa7f;
 }
 .tdc-main-right-demo-brain .tdc-occipital-lobe {
-  top: 100px;
-  left: 280px;
+  top: 50px;
+  left: 140px;
 }
 .tdc-main-right-demo-brain .tdc-occipital-lobe svg {
-  width: 140px;
+  width: 70px;
 }
 .tdc-main-right-demo-brain .tdc-occipital-lobe:hover svg, .tdc-main-right-demo-brain .tdc-occipital-lobe.active svg {
   fill: #ffc446;
 }
 .tdc-main-right-demo-brain .tdc-parietal-lobe {
   top: 0;
-  left: 180px;
+  left: 90px;
 }
 .tdc-main-right-demo-brain .tdc-parietal-lobe:hover svg, .tdc-main-right-demo-brain .tdc-parietal-lobe.active svg {
   fill: #e497a4;
 }
 .tdc-main-right-demo-brain .tdc-temporal-lobe {
-  top: 140px;
-  left: 95px;
+  top: 70px;
+  left: 45px;
 }
 .tdc-main-right-demo-brain .tdc-temporal-lobe svg {
-  width: 220px;
+  width: 110px;
 }
 .tdc-main-right-demo-brain .tdc-temporal-lobe:hover svg, .tdc-main-right-demo-brain .tdc-temporal-lobe.active svg {
   fill: #7e7acf;
 }
 .tdc-main-right-demo-brain .tdc-brain-stem {
-  top: 280px;
-  left: 180px;
+  top: 140px;
+  left: 90px;
 }
 .tdc-main-right-demo-brain .tdc-brain-stem svg {
-  width: 140px;
+  width: 70px;
 }
 .tdc-main-right-demo-brain .tdc-brain-stem:hover svg, .tdc-main-right-demo-brain .tdc-brain-stem.active svg {
   fill: #b81434;
 }
+html,body{
+  background-color: #000;
+}
 </style>
 </head>
 
-<body> 
+<bod>  
         <div class="tdc-main">
                 <div class="tdc-main-left">
                     <div class="tdc-main-left-wrapper">
@@ -218,7 +223,7 @@ background: transparent;
                         </div>
                     </div>
                 </div>
-                </div>
+        </div>
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
