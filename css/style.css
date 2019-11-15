@@ -115,7 +115,7 @@ a {
   height:100%;
   overflow:auto;
   background-color:rgb(0,0,0);
-  background-color:rgba(0,0,0,0.8)
+  background-color:rgba(0,0,0,0.8);
   }
   
   .modal-content{
@@ -123,7 +123,7 @@ a {
   display: block;
   position: absolute;
   height:300px;
-  width:400px;
+  width:300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -169,7 +169,7 @@ a {
   background: #FFF;
   overflow: hidden;
   position: absolute;
-  height: 600px;
+  height: 500px;
   left: 0;
   right: 0;
   top: 0;
@@ -533,51 +533,6 @@ nav li:last-child a:after
 }
 /* Press */
 
-/* Table */
-.Marquee {
-  background: linear-gradient(-135deg, #008ed9, #8b00db);
-  width: 80vw;
-  height:150px;
-  box-sizing: border-box;
-  padding: 1em;
-  color: #fff;
-  font-weight: 200;
-  display: flex;
-  align-items: center;
-  right: 50px;
-  overflow: hidden;
-}
-.Marquee-content {
-  height: 200px;
-  display: flex;
-  animation: marquee 20s linear infinite running;
-}
-.Marquee-content:hover {animation-play-state: paused;
-}
-.Marquee-tag {
-  width: 200px;
-  margin: 0 0.5em;
-  padding: 0.5em;
-  background: rgba(255,255,255,0.1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-.Marquee-tag:hover {
-  background: rgba(255,255,255,0.5);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-  @-moz-keyframes marquee {0% {transform: translateX(0);
-  }100%
-   {transform: translate(-50%);}}
-   @-webkit-keyframes marquee
-    {0% {transform: translateX(0);}100% 
-    {transform: translate(-50%);}}
-    @-o-keyframes marquee {0% {transform: translateX(0);}100% {transform: translate(-50%);}}
-   @keyframes marquee {0% {transform: translateX(0);}100% {transform: translate(-50%);}}
-  
  /* card */
  .skill-card {
 	position: relative;
