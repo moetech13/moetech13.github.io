@@ -637,7 +637,7 @@ nav li:last-child a:after
     width: 100%;
     color: #ffffff;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     left: 3%;
   }
   .snip1446 * {
@@ -710,7 +710,7 @@ nav li:last-child a:after
   }
   .snip1446 p {
     font-weight: 300;
-    font-size: 10px;
+    font-size: 15px;
   }
   .snip1446:hover:after,
   .snip1446.hover:after,
