@@ -207,7 +207,7 @@ a {
 }
 /* each slide backgound color slide1: b70000*/  
 .slide1 {
-  background: #fa61b3;
+  background: #b70000;
   left: 0;
 }
 .slide2 {
@@ -219,7 +219,7 @@ a {
   left: 200%
 }
 .slide4 {
-  background: #00bcd7;
+  background: #0092b3;
   left: 300%;
 }
 .slider > div {
