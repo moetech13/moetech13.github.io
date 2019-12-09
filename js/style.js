@@ -48,6 +48,7 @@ window.onresize = function(event) {
   iframeAutoScale();
 };
 
+
 // Text Writer
 function typeEffect(element, speed) {
 	var text = element.innerHTML;

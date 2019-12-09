@@ -40,7 +40,73 @@ p{
   font-family: 'Handlee', cursive;
   color: #ffffff;
 }
+
 /*  */
+
+h1 {
+  margin: 0px;
+}
+
+.reveal-text,
+.reveal-text:after {
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
+}
+
+.reveal-text {
+  margin-top: 20px;
+  position: relative;
+  font-size: 40px;
+  user-select: none;
+  animation-name: reveal-text;
+  color: #fff;
+  white-space: nowrap;
+  font-family: 'Work Sans', sans-serif;
+}
+.reveal-text:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: revealer-text;
+}
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes revealer-text {
+  0%, 50% {
+    transform-origin: 0 50%;
+  }
+  60%, 100% {
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
 /*  */
 /* Table */
 .Marquee {
@@ -105,17 +171,14 @@ p{
 <div style="background-color: transparent; height:150px;"></div>
 
     <div class="container">
-        <div class="skill-card">
-            <header class="skill-card__header" style="background-color: #67B31B;"><video class="skill-card__icon" id="video" autoplay muted loop alt="what is Relativity" src="images/reality.MOV"></video>  
-            </header>
-            <section class="skill-card__body">
-              <h2 class="skill-card__title">Relativity</h2><span class="skill-card__duration">What is Relativity</span>
-              
-              <ul class="skill-card__knowledge">
-                  <a href="#" class="action-button shadow animate red"> </a>
-              </ul>
-            </section>
-          </div>
+        <div>
+            <h1 class="reveal-text">
+                Moe
+              </h1>
+              <h1 class="reveal-text">
+                Techtainment
+              </h1>
+        </div>
     </div>
 <div style="background-color:transparent; height:30px;"></div>  
 </div>
@@ -151,7 +214,7 @@ p{
             <label for="slider_3" class="numb3"><i><img src="images/left.png"></i></label>
             <label for="slider_4" class="numb4"><i><img src="images/left.png"></i></label>
           </div>
-          <div class="slider slide1" style="background-color:#b70000;">
+          <div class="slider slide1"  style="background-color:#b70000;">
             <div>
              <h2>Drill & Kill</h2></br>
                 <h3>Study Study Study</h3>
@@ -182,413 +245,15 @@ p{
         </div>
     </section>
 <!-- STEAM -->
-<section>
+<div>
 <div class="container">
-    <div style="background-color: transparent; height:200px;"> <p style="font-size:16px;">
-       Tap on the icons 👇
-              </p> </div>  
+    <div style="background-color: transparent; height:200px;"> <p style="font-size:16px;">Tap on the icons 👇</p> </div>  
    
-   <!-- . -->
-   <div class="container" style="text-align:center;"> 
-      <div class="skill-card">
-        <header class="skill-card__header" style="background-color: #B70000;"><img class="skill-card__icon" src="images/s.PNG" /></header>
-        <section class="skill-card__body">
-          <h2 class="skill-card__title">SCIENCE</h2><span class="skill-card__duration"><p>a systematic enterprise that builds </br> and organizes knowledge in the form of testable explanations and predictions about the universe</p></span>
-          <ul class="skill-card__knowledge">
-               <a href="#" class="action-button shadow animate" style="background-color: #B70000;"> ✨</a>
-          </ul>
-        </section>
-      </div>
-  </div>
-  <!-- 1 -->
-  <div class="row">
-      <div class="col">
-          <figure class="snip1446">
-              <img src="images/b70000.png"  />
-              <figcaption>
-                <h2>Neurotransmitters</h2>
-              </figcaption>
-            </figure>
-      </div>
-  
-    <div class="col">
-        <figure class="snip1446">
-            <img src="images/moetechsci.gif" />
-            <figcaption>
-            </figcaption>
-          </figure>
-    </div>
- 
-    <div class="col">
-        <figure class="snip1446">
-            <img src="images/b70000.png"  />
-            <figcaption>
-              <h2>States of Matter</h2>
-            </figcaption>
-          </figure>
-    </div>
-  </div>
-  <!-- 2 -->
-  <div class="row">
-    <div class="col">
-        <figure class="snip1446">
-            <img src="images/b70000.png" />
-            <figcaption>
-              <h2>Quantum Entanglement</h2>
-              <p>data.</p>
-             
-            </figcaption>
-          </figure>
-    </div>
-    <div class="col">
-        <figure class="snip1446">
-            <img src="images/b70000.png" />
-            <figcaption>
-              <h2>Schrodingers Cat</h2>
-              <p>All things exist but what is true is what you encounter.</p>
-           
-            </figcaption>
-          </figure>
-    </div>
-    <div class="col">
-        <figure class="snip1446">
-            <img src="images/b70000.png" />
-            <figcaption>
-              <h2>Thermodynamics</h2>
-              <p>physical quantities (temperature, energy, and entropy) that characterize thermodynamic systems at thermal equilibrium. The laws describe how these quantities behave under various circumstances</p>
-            </figcaption>
-          </figure>
-    </div>
-  </div> 
-</div>
-    <!-- break -->
- 
-    <!-- draft -->
-    <!-- T -->
-    <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
-        <!-- . -->
-        <div class="container col-md-12">
-            <div class="skill-card" >
-                <header class="skill-card__header" style="background-color: #FA61B3;"><img class="skill-card__icon" src="images/t.PNG" alt="HTML5 Logo"/></header>
-                <section class="skill-card__body">
-                  <h2 class="skill-card__title">TECHNOLOGY</h2><span class="skill-card__duration"><p>the collection of techniques, skills, methods, </br> and processes used in the production of goods or services or in the accomplishment of objectives</p></span>
-                  <ul class="skill-card__knowledge">
-                      <a href="#" class="action-button shadow animate" style="background-color: #FA61B3;">🔭</a>
-                  </ul>
-                </section>
-              </div>
-         </div>
-       <!-- E1 -->
-     <div class="row">
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png" />
-                 <figcaption>
-                   <h2>Atlas<br>Hyperloop</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/moetechtech.gif"/>
-                 <figcaption>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png"/>
-                 <figcaption>
-                   <h2>Coding</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-        </div>
-        <!-- E2 -->
-        <div class="row">
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png" />
-                 <figcaption>
-                   <h2>EEG/MRI</h2>
-                   <p>data.</p>
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-             <figure class="snip1446">
-                 <img src="images/fa61b3.png"/>
-                 <figcaption>
-                   <h2>Mixed Reality</h2>
-                   <p>data</p>
-                 
-                 </figcaption>
-               </figure>
-         </div>
-         <div class="col">
-            <figure class="snip1446">
-                <img src="images/fa61b3.png" />
-                <figcaption>
-                  <h2>Morse Code</h2>
-                  <p>data.</p>
-                
-                </figcaption>
-              </figure>
-        </div>
-        </div>
-     </div>
-    <!-- break -->
-   
-    <!-- E -->
-    <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
-    <!-- . -->
-    <div class="container">
-            <div class="skill-card" >
-              <header class="skill-card__header" style="background-color: #67B31B;"><img class="skill-card__icon" src="images/e.PNG" alt="HTML5 Logo"/></header>
-              <section class="skill-card__body">
-                <h2 class="skill-card__title">ENGINEERING</h2><span class="skill-card__duration"><p> the application of knowledge in the form of science, mathematics, and empirical evidence, to the design, construction, and maintenance of structures, software, devices, systems, and organizations</p></span>
-                <ul class="skill-card__knowledge">
-                    <a href="#" class="action-button shadow animate" style="background-color: #67B31B;">🛠</a>
-                </ul>
-              </section>
-            </div>
-     </div>
-   <!-- E1 -->
- <div class="row">
-       <div class="col">
-         <figure class="snip1446">
-             <img src="images/67b31b.png"/>
-             <figcaption>
-               <h2>Light Bulb</h2>
-               <p>data.</p>
-             </figcaption>
-           </figure>
-     </div>
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/moetecheng.gif" />
-             <figcaption>
-               <p>data.</p>
-             </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/67b31b.png"/>
-             <figcaption>
-               <h2>Printing Press</h2>
-               <p>data.</p>
-             </figcaption>
-           </figure>
-     </div>
-    </div>
-    <!-- E2 -->
-    <div class="row">
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/67b31b.png" />
-             <figcaption>
-               <h2>Solar Panels</h2>
-               <p>data.</p>
-             </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/67b31b.png"/>
-             <figcaption>
-               <h2>Telescope</h2>
-              <div class="icons"><a href="https://www.biography.com/scholar/galileo"><i class="ion-chatbubbles"></i></a>
-              </br>  <a href="#" class="action-button shadow animate red"> </a>
-              <a href="bit.ly/2JMQTjS"></a>
+       <div class="height:500px"> 
 
-             
-             </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-        <figure class="snip1446">
-            <img src="images/67b31b.png" />
-            <figcaption>
-              <h2>Turbines</h2>
-              <p>data.</p>
-            
-            </figcaption>
-          </figure>
-    </div>
-    </div>
- </div>
-     <!-- A -->
-     <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
-    <!-- . -->
-    <div class="container">
-        <div class="skill-card" >
-            <header class="skill-card__header" style="background-color: #FFCA3D;"><img class="skill-card__icon" src="images/a.PNG" alt="HTML5 Logo"/></header>
-            <section class="skill-card__body">
-              <h2 class="skill-card__title">ARTS</h2><span class="skill-card__duration"><p> a diverse range of aspects within audio, creation, performance, or visuals. </br> To expressing the author's imagination, beauty, and, emotional power</p></span>
-              <ul class="skill-card__knowledge">
-                  <a href="#" class="action-button shadow animate" style="background-color: #FFCA3D;">🎨</a>
-              </ul>
-            </section>
-          </div>
-     </div>
-   <!-- . -->
- <div class="row">
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/ffca3d.png"/>
-             <figcaption>
-                <h2>Colors</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/moetechart.gif" />
-             <figcaption>
-                <h2></h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-    
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/ffca3d.png"/>
-             <figcaption>
-               <h2>Flatlanders</h2>
-               <p>data.</p>
-                </figcaption>
-           </figure>
-     </div>
-    </div>
-    
-    <div class="row">
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/ffca3d.png"/>
-             <figcaption>
-                <h2>Hieroglyphs</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/ffca3d.png" />
-             <figcaption>
-                <h2>Music</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-        <figure class="snip1446">
-            <img src="images/ffca3d.png"/>
-            <figcaption>
-                <h2>Self Similarities</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-          </figure>
-    </div>
-    </div>
- </div>
-     <!-- M -->
-     <div class="container">
-        <div style="background-color: transparent; height:200px;"></div>  
-    <!-- . -->
-    <div class="row">
-        <div class="skill-card" >
-            <header class="skill-card__header" style="background-color: #0092B3;"><img class="skill-card__icon" src="images/m.PNG" alt="HTML5 Logo"/></header>
-            <section class="skill-card__body">
-              <h2 class="skill-card__title">MATH</h2><span class="skill-card__duration"><p> the study of such topics as quantity, structure, space, and change. Mathematicians seek and use patterns to formulate new conjectures; they resolve the truth or falsity of conjectures by mathematical proof</p></span>
-              <ul class="skill-card__knowledge">
-                  <a href="#" class="action-button shadow animate" style="background-color: #0092B3;">📐 </a>
-              </ul>
-            </section>
-          </div>
-     </div>
-   <!-- . -->
- <div class="row">
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/0092b3.png"/>
-             <figcaption>
-                <h2>Centripital Force</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-      <div class="col">
-         <figure class="snip1446">
-             <img src="images/moetechmath.gif"/>
-             <figcaption>
-                
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-   
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/0092b3.png" />
-             <figcaption>
-               <h2>EcoLocation</h2>
-                <p>Bats & sea animals</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-    </div>
+       </div>
 
-     <div class="row">
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/0092b3.png" />
-             <figcaption>
-            <h2>Golden Ratio</br>Fibonacci</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-         <figure class="snip1446">
-             <img src="images/0092b3.png"/>
-             <figcaption>
-                <h2>Hilbert's Hotel</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-           </figure>
-     </div>
-     <div class="col">
-        <figure class="snip1446">
-            <img src="images/0092b3.png" />
-            <figcaption>
-                <h2>Tarski's Paradox</h2>
-                <p>data</p>
-              </br>
-              </figcaption>
-          </figure>
-    </div>
-     </div>
 </div>
- </section>
      <!--footer-->
 <div style="background:transparent;  height:50px;"></div>  
   <!-- . -->  
@@ -651,6 +316,7 @@ p{
 <script type="text/javascript">
 $('.carousel').carousel();
 // 
+
 
 </script>  
 </body>

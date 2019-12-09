@@ -102,7 +102,6 @@ a {
 	vertical-align: middle;
 }
 /* Text End */
-
 /* The Modal (background) */
 .modal {
   z-index:6;
@@ -368,7 +367,7 @@ a {
 
 #sp{
   background-color: transparent;
-  height:200px;
+  height:50px;
 }
 /* Video HTML Frames */
 .iframe-container{
@@ -474,8 +473,7 @@ nav li a:hover
 }
 nav li:first-child a
 {
-    border-left: 10px solid #ffffff;
-    
+    border-left: 10px solid transparent;    
 }
 nav li:nth-child(2) a
 {
@@ -516,8 +514,7 @@ nav li a:after
 }
 nav li:first-child a:hover
 {
-    background-color: #fff;
-    
+    background-color: #fff;    
 }
  nav li:nth-child(2) a:after
 {
