@@ -366,7 +366,7 @@ a {
 /* Video HTML Frames */
 .iframe-container{
   position: relative;
-  width:100%;
+  width:100px;
   top:0;
   height:0;
 }
@@ -374,7 +374,7 @@ a {
   position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100px;
     height: 300px;
     border: 0;
 }
@@ -605,10 +605,11 @@ nav li:last-child a:after
 	
   }
   .skill-card .skill-card__body .skill-card__title {
-  font-size: 20px;
-	font-weight: 600;
+  font-size: 18px;
+  top: 13px;
 	text-transform: uppercase;
-	color:#fff;
+  color:#fff;
+  letter-spacing: 1px;
   }
   .skill-card .skill-card__body .skill-card__duration {
   color: #fff;
@@ -704,12 +705,11 @@ nav li:last-child a:after
     opacity: 0;
   }
   .snip1446 h2 {
-    font-weight: 700;
+    letter-spacing: 3px;
     font-size: 20px;
     text-transform: uppercase;
   }
   .snip1446 p {
-    font-weight: 300;
     font-size: 15px;
   }
   .snip1446:hover:after,
