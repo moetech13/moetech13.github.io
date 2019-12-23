@@ -281,10 +281,58 @@ h1 {
               <h2>Drill & Kill</h2><br>
               <h3>Study Study Study</h3>
            <a href="" class="button">Learn</a> 
-                  <a href="https://www.nytimes.com/2010/09/19/magazine/19fob-medium-heffernan-t.html" ></a> </div>
-     
+                  <a href="https://www.nytimes.com/2010/09/19/magazine/19fob-medium-heffernan-t.html" ></a> 
+                
+                 <!-- 1st row  -->
+        <div class="row">
+          <div class="col">
+              <div class="container1">
+                <img src="images/level.png" style="max-width:100%;" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
+              </div>
+          </div>
+           <div class="col">
+                <div class="container1">
+                  <img src="images/level0.png" style="max-width:100%;" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+          </div> 
+          <div class="col">
+                <div class="container1">
+                  <img src="images/level1.png" style="max-width:100%;" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+          </div>
+         </div>
+         <!-- 2nd row -->
+         <div class="row">
+          <div class="col">
+               <div class="container1">
+                  <img src="images/level2.png" style="max-width:100%;" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+          </div>
+          <div class="col">
+               <div class="container1">
+                  <img src="images/level3.png" style="max-width:100%;" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
+               </div>
+          </div>
+          <div class="col">
+                <div class="container1">
+                  <img src="images/level4.png" style="max-width:100%;" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+          </div>
+
+         </div>
+          <!-- Pop Up -->
+          <div id="modal01" class="modal" onclick="this.style.display='none'">
+              <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <div class="modal-content">
+                <img id="img01" style="max-width:100%" >
+              </div>
+            </div>
+            <!-- Pop Up End -->
+  
+                
+                </div>
             <div>
-           
+                
           </div>
           </div>
         </div>
@@ -591,6 +639,12 @@ h1 {
 <script type="text/javascript" src="js/style.js"></script>
 <script type="text/javascript">
 $('.carousel').carousel();
+// 
+// Get the modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
 // 
 var words = ["LOADING", "MOM", "FRIENDS", "HUNT", "INSANITY", "DAD", "LICK", "BROTHER", "WAKE", "GIRLFRIEND", "TATAU", "MAN", "HOME"];
 
