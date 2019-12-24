@@ -763,7 +763,36 @@ $(".hover").mouseleave(
   
     pna = new ParticleNetworkAnimation(); pna.init($('.particle-network-animation')[0]);
   })();
-  
+  // word popups
+  // Get the modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+// 
+var words = ["LOADING", "MOM", "FRIENDS", "HUNT", "INSANITY", "DAD", "LICK", "BROTHER", "WAKE", "GIRLFRIEND", "TATAU", "MAN", "HOME"];
+
+window.addEventListener("load", function() {
+		var randoms = window.document.getElementsByClassName("randoms");
+		for (i = 0; i < randoms.length; i++)
+				changeWord(randoms[i]);
+}, false);
+
+function changeWord(a) {
+		a.style.opacity = '0.1';
+		a.innerHTML = words[getRandomInt(0, words.length - 1)];
+		setTimeout(function() {
+				a.style.opacity = '1';
+		}, 425);
+		setTimeout(function() {
+				changeWord(a);
+		}, getRandomInt(500, 800));
+}
+
+
+function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+}
   </script>
   
 </body>
