@@ -420,7 +420,7 @@ iframe{
 }
 .iframe-container{
   position: relative;
-  width:100px;
+  width:300px;
   top:0;
   left: 0;
   height:200px;
@@ -441,13 +441,13 @@ nav ul {
   width: 100%;
 }
 nav ul li {
-  width: 20%;
+  width: 100%;
   text-align: center;
 }
 nav ul li a {
   display: flex;
   justify-content: center;
-  color:slategray;
+  color:#fff;
   transition: all .15s ease;
 }
 nav ul li a:hover {
@@ -458,13 +458,13 @@ nav ul li a.selected {
   transition: all .15s ease;
   color: white;
 }
-/* original position is absolute */
+/* original position is absolute , bottom is the hori*/
 #navActiveBG {
   position: relative;
   top: 14px;
   width: 20%;
   height: 24px;
-  background: yellow;
+  background: #fff;
   border-radius: 4px;
   transition: -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
   transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
@@ -499,12 +499,11 @@ nav li a
     width:100%;
     padding:15px;
     border-left:5px solid;
+    font-family: 'Atma', cursive;
     font-size: 10px;
-    font-family:'Atma', cursive ;
     position:relative;
     z-index: 2;/*for showing the lower layer*/
     text-decoration: none;
-    font-weight:bolder;
     box-sizing: border-box;   
 }
 nav li a:hover
@@ -515,7 +514,7 @@ nav li a:hover
 }
 nav li:first-child a
 {
-    border-left: 10px solid transparent;    
+    border-left: 10px solid #b70000;    
 }
 nav li:nth-child(2) a
 {
@@ -556,7 +555,7 @@ nav li a:after
 }
 nav li:first-child a:hover
 {
-    background-color: #fff;    
+    background-color: #b70000;    
 }
  nav li:nth-child(2) a:after
 {
