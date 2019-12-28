@@ -299,8 +299,8 @@ ul.banner-social-buttons {
               <div><h5>How to Learn</h5>
              <img src="images/tiers.gif" height="300px">
             </div> <br>
-             <div class="container row">
-              <div class="col-sm-12">
+             <div class="container1 ">
+              <div class="row col-sm-12">
                 <div class="col-sm-4">
                   <img src="images/tier1.gif" height="100px" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">    
                 </div>
@@ -311,12 +311,19 @@ ul.banner-social-buttons {
                   <img src="images/tier3.gif" height="100px" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">
                 </div>
               </div>
+                   <!-- Pop Up -->
+                   <div id="modal02" class="modal" onclick="this.style.display='none'">
+                    <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <div class="modal-content">
+                      <img id="img02" style="max-width:100%" >
+                    </div>
+                  </div>
              </div>
              <br><br>
               </div>
             </section>
             <!-- Creativity -->
-            <section class="et-slide" id="tab-flexbox"> 
+            <section class="et-slide" id="tab-flexbox"> <br><br><br>
               <div class="container">
                 <h2>Cognitive & Experimental Learning</h2><br>
                 <h5>Remember when we used Colors, Music, Numbers, & Patterns to learn. <br> Do you realized it's crazy that you can remember that far back.<br> That's because it worked!</h5>
@@ -601,10 +608,10 @@ ul.banner-social-buttons {
                 <div class="Marquee">
                     <div class="Marquee-content">
                       <div class="Marquee-tag">1UN...
-                        <div class="row"><img src="images/MOeLogow.png" height="100px"/></div>
+                        <div class="row"><img src="images/moet.png" height="100px"/></div>
                         <div class="row"><button><p>Play</p></button></div>
                       </div>
-                      <div class="Marquee-tag">2Women in Sciene/moe<img src="images/MOeLogow.png" height="100px"></div>
+                      <div class="Marquee-tag">2Women in Sciene/moe<img src="images/moet.png" height="100px"></div>
                       <div class="Marquee-tag">3UNCon<img src="images/moeicon.png" height="100px"></div>
                       <div class="Marquee-tag">4<img src="images/moeicon.png" height="100px"></div>
                       <div class="Marquee-tag">5Chess<img src="images/moeicon.png" height="100px"></div>
@@ -660,6 +667,11 @@ ul.banner-social-buttons {
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
+}
+// modal
+function onClick(element) {
+  document.getElementById("img02").src = element.src;
+  document.getElementById("modal02").style.display = "block";
 }
 // tabs
 class StickyNavigation {
