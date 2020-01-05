@@ -109,17 +109,17 @@ a {
 .Marquee {
   background: linear-gradient(-135deg, #008ed9, #8b00db);
   width: 90vw;
-  height:150px;
+  height:160px;
   box-sizing: border-box;
   padding: 1em;
   color: #fff;
   display: flex;
   align-items: center;
-  left: 50px;
+  left: 10px;
   overflow: hidden;
 }
 .Marquee-content {
-  height: 200px;
+  height: 150px;
   display: flex;
   animation: marquee 20s linear infinite running;
 }
@@ -138,7 +138,6 @@ a {
 .Marquee-tag:hover {
   background: rgba(255,255,255,0.5);
   transform: scale(1.1);
-  cursor: pointer;
 }
   @-moz-keyframes marquee {0% {transform: translateX(0);
   }100%
@@ -190,7 +189,7 @@ a {
   float:right;
   font-size:24px;
   font-weight:bold;
-  color:#fff;
+  color:#000;
   }
   .container1 {
   width:300px;
