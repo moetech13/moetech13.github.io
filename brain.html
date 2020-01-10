@@ -1,129 +1,107 @@
-<!DOCTYPE html>
- <html>
+<!Doctype html>
+<html>
 <head>
-  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146899361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-146899361-1');
+</script>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="index,follow"/>
 
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="Mouminatou, Moe Techtainment,HTML,CSS,Cognitive,JavaScript, Physics, Barry,Leader, STEM,STEAM"/>
+    <meta name="description" content=" Numbers & Nature, Nature & Numbers ! Oh My ! Relativity is ALL around us, Dive in from Quantum Mechanics to M-Theory. Let's get Smarter, One Synapse at a Time; using Cognitive & Experimental Learning (Science, Tech, Engineering, Arts, Math)"/>
+    <meta name="author" content="Mouminatou Barry, Moe Techtainment"/>
+    <title>Moe Techtainment</title>
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="images/TransLogo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="science,stem,steam, Mouminatou, united nation,leader" >
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Atma|Coiny|Handlee|Rum+Raisin&display=swap" rel="stylesheet">
+    <!-- FaFa -->
+    <script src="https://use.fontawesome.com/e13b691fb7.js"></script>
+    <!-- query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <style>
 
-  /* original position is absolute , bottom is the hori*/
-#navActiveBG {
-  position: relative;
-  top: 14px;
-  width: 20%;
-  height: 24px;
-  background: #fff;
-  border-radius: 4px;
-  transition: -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
-  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
-  transition: transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5), -webkit-transform 0.5s cubic-bezier(0.7, -0.2, 0.2, 1.5);
-  will-change: transform;
-  z-index: -1;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-nav
-{
-    float:none;
-    clear:both;
-    width:100%;
-    margin:5% auto;
-   
-}
-nav ul
-{
-    list-style:none;
-    margin:0px;
-    padding:0px;
-}
-nav li
-{
-    float: none;
-    width:100%;
-                
-}
-nav li a
-{
-    display: block;
-    width:100%;
-    padding:15px;
-    border-left:5px solid;
-    font-family: 'Atma', cursive;
-    font-size: 10px;
-    position:relative;
-    z-index: 2;/*for showing the lower layer*/
-    text-decoration: none;
-    box-sizing: border-box;   
-}
-nav li a:hover
-{
-    border-bottom: 0px;
-    color:white;
-    text-decoration:none;   
-}
-nav li:first-child a
-{
-    border-left: 10px solid #b70000;    
-}
-nav li:nth-child(2) a
-{
-    border-left: 10px solid #f382bf;
-    
-} 
-nav li:nth-child(3) a
-{
-    border-left: 10px solid #ffc600;
-    
-}
-
- nav li:nth-child(4) a
-{
-    border-left: 10px solid #67b31b; 
-    
-}
-nav li:last-child a
-{
-    border-left: 10px solid #0092b3;
-    
-}
-nav li a:after
-{
-    content:"";
-    height:100%;
-    left:0px;
-    top:0px;
-    width:0px;
-    position: absolute;
-    transition: all .3s ease 0s;
-    z-index: -1;
-}
- nav li a:hover:after
-{
-    width:100%;
-     
-}
-nav li:first-child a:hover
-{
-    background-color: #b70000;    
-}
- nav li:nth-child(2) a:after
-{
-    background-color:#f382bf;
-}
-nav li:nth-child(3) a:after
-{
-    background-color:#ffc600;
-} 
-nav li:nth-child(4) a:after
-{
-    background-color:#67b31b; 
-} 
-nav li:last-child a:after
-{
-    background-color:#0092b3;
-}
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
+  h1,  h2{
+  font-family: 'Rum Raisin', sans-serif;
+    color: #fff;
+    font-size: 18px;
   }
+  h3{
+	font-family: 'Arima Madurai', cursive;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+  h5{
+    font-family: 'Atma', cursive;
+    color: #fff;
+    font-size: 18px;
+  }
+  h6{
+    font-family: 'Roboto', sans-serif;
+  }
+  p{
+    font-family: 'Handlee', cursive;
+  }
+  /*  */
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #1a99de;
+    color: #ffc600;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #1a99de;
+    outline: 0;
+    color: #000;
+    background-color: #ffc600;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
 }
 /* @media only screen and (max-width: 200px) {} */
 .tdc-main {
@@ -301,73 +279,172 @@ background: transparent;
 .tdc-main-right-demo-brain .tdc-brain-stem:hover svg, .tdc-main-right-demo-brain .tdc-brain-stem.active svg {
   fill: #b81434;
 }
-html,body{
-  background-color: #000;
-}
-p{
-  font-family: 'Atma', cursive;
-}
-</style>
+
+/*  */
+  </style>
 </head>
+<div class="particle-network-animation"></div>
+<body style="background-color:#000;" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="container" style="background-color: rgba(0,0,0,0.8);">
 
-<body>  
-        <div class="tdc-main">
-                <div class="tdc-main-left">
-                    <div class="tdc-main-left-wrapper">
-                        <div class="tdc-main-left-wrapper-info">
-                            <div class="tdc-info-title">Let's Learn about our Brains!</div>
-                            <br>
-                            <div class="tdc-info-description"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tdc-main-right">
-                    <div class="tdc-main-right-filter"></div>
-                    <div class="tdc-main-right-demo">
-                        <div class="tdc-main-right-demo-brain">
-                            <div class="tdc-brain-part tdc-frontal-lobe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263.36 316.37"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>frontal-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M1.27,192.38c1.08-11.44,4.95-19.83,12.68-36.62A365.14,365.14,0,0,1,32.26,122c1.61-2.63,9.21-15.05,16.9-25.35,24.44-32.73,55.69-52,60.56-54.93,26.78-16.18,50.73-22.39,67.61-26.76,4.64-1.2,12.27-2.39,26.76-5.63,11.63-2.6,17.4-4.09,26.76-5.63,17.17-2.83,25.83-4.16,29.58,0,2.74,3,2.84,8.11-1.41,22.54-7.65,25.95-13.47,28.1-16.9,42.25-5.61,23.14,7.46,27.75,1.41,52.11-4.11,16.57-10.23,14.72-14.08,32.39-4.51,20.66,2.24,30.59-5.63,39.44-5.88,6.6-12.89,4.73-25.35,8.45-22.61,6.74-36.27,23.85-40.85,29.58-21.05,26.36-9.69,48-33.8,70.42-3.76,3.49-8.84,8.11-16.9,11.27-23.36,9.14-50.45-2.41-66.2-15.49-16.14-13.4-22-31.94-33.8-69C1.47,210.48.4,201.55,1.27,192.38Z"/></g></g></svg>
-                            </div>
-                            <div class="tdc-brain-part tdc-cerebellum">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.25 161.76"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>cerebellum</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M113.8,157.91c12.66-4.17,35.25-16.66,59.15-46.48,24.13-30.11,32.25-56.24,35.21-67.61,4-15.51,8.74-27.87.68-35.57C202.42,2.13,191.69-1.46,164.5,3c-19.42,3.17-23.72,6.37-36.62,0-9.8-4.84-18.54,4.8-28.17,8.45-25.49,9.68-16.73,7.29-38,16.9-15.87,7.16-20.89,3.28-38,.86-6-.85-17.25,6.69-22,14.49-2.83,4.63,4,6.31,13.56,15.64,10.35,10.05,14.64,21.33,18.31,31,7.08,18.63,2.81,23,8.45,35.21,8.2,17.75,24.74,25.66,29.58,28.17,5.1,2.65,13,6.65,23.94,7A50.93,50.93,0,0,0,113.8,157.91Z"/></g></g></svg>
-                            </div>
-                            <div class="tdc-brain-part tdc-occipital-lobe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.75 162.7"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>occipital-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M28.08,150.3c7.67-2,12.21,1.73,21.13,4.23,20.93,5.86,26-6.07,53.52-4.23,20.17,1.35,23.56,8.16,35.21,4.23,12.82-4.33,19.57-16.23,23.94-23.94,9.56-16.84,9.73-33,9.86-45.07a121,121,0,0,0-7-42.25C160.84,32.67,150.78.61,137.94,1c-5.69.17-11.33,6.67-12.68,12.68-1.67,7.45,4.07,10.52,4.23,18.31.13,6.41-3.64,9.38-21.13,28.17C88.12,81.91,89.29,82.11,83,86.92c-8.35,6.39-12.33,7.5-16.9,14.08-6.33,9.11-4.26,15-8.45,21.13-6.29,9.23-17.31,1.73-38,9.86-8.06,3.16-16.6,6.65-18.31,14.08-1.44,6.25,2.18,14.33,7,15.49C14.3,163,17.55,153,28.08,150.3Z"/></g></g></svg>
-                            </div>
-                            <div class="tdc-brain-part tdc-parietal-lobe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257.5 215.34"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>parietal-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M32.14,3c3.32-4.53,11.53-.24,33.8,1.41C81.54,5.58,85,4,94.12,7.24c7.68,2.71,8.41,4.94,16.9,8.45,10.63,4.39,16.22,3.67,26.76,5.63a119.7,119.7,0,0,1,40.85,16.9c9.49,6.35,7.31,7.28,25.35,22.54C219.67,74,221.62,73.57,232.14,83.3c13,12.06,27,24.92,23.94,35.21a12.91,12.91,0,0,1-.66,1.67c-3.92,8.79-10.77,9-13.42,13.82-3.89,7,6.89,13.83,4.23,23.94-1.24,4.7-4.09,5.44-14.08,14.08A265.16,265.16,0,0,0,208.2,196c-10.74,12.43-12.22,17.65-18.31,18.31s-7.11-4.24-16.9-7c-9.21-2.63-17.38-.89-28.17,1.41-14.05,3-14.68,6-22.54,5.63-10.5-.53-18-6.37-22.54-9.86-5.35-4.15-16-12.38-15.49-22.54.09-1.87,1.94-6,5.63-14.08,5.21-11.45,6.73-13.47,5.63-15.49-2.29-4.25-13.1-3.11-19.72-1.41-11.06,2.84-11.6,7.53-23.94,12.68-4.92,2-11.73,3.24-25.35,5.63-21.13,3.71-23,2.39-23.94,1.41-4.43-4.86,1.38-17.38,7-29.58,5.76-12.41,8.88-14.31,11.27-22.54,3.33-11.47.89-22.23,0-26.76-2.46-12.49-6-12.52-5.63-19.72C15.73,61.36,23.46,61,29.33,45.27a60.81,60.81,0,0,0,4.23-26.76C32.77,9,29.94,6,32.14,3Z"/></g></g></svg>
-                            </div>
-                            <div class="tdc-brain-part tdc-temporal-lobe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287.49 189.89"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>temporal-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M1.11,140c1-7.82,8.46-7.87,16.9-19.72,5.3-7.43,4.49-10.38,12.68-33.8C36.09,71,38.8,63.26,40.54,61.12,51.26,47.95,63.39,54.13,87,40c14-8.4,10.25-10.88,23.94-18.31C114,20,122.33,15.74,154.63,7.6,169,4,175-1.16,178.57,2c4.19,3.63-1.85,10.92,1.41,21.13,4,12.49,18.43,18.49,28.17,22.54,7.21,3,16.44,6.83,28.17,5.63,14.42-1.47,18.71-9.11,33.8-8.45,4.64.2,12.83.56,15.49,5.63,3.1,5.91-2.4,16.14-9.86,19.72-5.77,2.77-9.19-.12-16.9,0-16.57.26-34.76,14.13-36.62,28.17C221,105.45,227.58,108,225,114.64c-5,13.15-35.37,14-39.44,14.08-12.9.35-14.25-2.39-21.13,0-8.52,3-9.51,8.24-23.94,23.94A184.6,184.6,0,0,1,118,173.8c-9.73,7.54-15.42,12-23.94,14.08-8.91,2.22-15.92.57-29.58-2.82-17.22-4.27-33-8.2-47.89-21.13C9.48,157.73-.12,149.37,1.11,140Z"/></g></g></svg>
-                            </div>
-                            <div class="tdc-brain-part tdc-brain-stem">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.11 242.51"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>brain-stem</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M1.14,39c1.11,3.32,7.64,1.49,14,6.24,5.7,4.23,7.64,11,9,15.62,2.44,8.46.11,10.6,2.75,17.69.64,1.71,2.38,5.9,9,13a97.43,97.43,0,0,0,20,16.11c11.14,7.14,19.87,20.74,37.34,47.95,8.16,12.71,13.92,23.27,17.29,29.48,7.46,13.72,11.18,20.59,14.15,27.82,6.37,15.56,5.69,20.13,11.4,24.45,7.51,5.68,17.36,4.32,25.94,3.14,10-1.38,27.39-3.77,33.41-14.93s-6.14-19.19-22-61.31c-8.86-23.52-10.66-35.95-22.8-42.05-7.49-3.77-9.76-.52-23.19-3.93-6.06-1.54-22.74-6-36.94-20.83-3.86-4-15.87-17.52-18.86-37.34-1.2-7.92.56-6.8-.79-13.76C68.11,31.75,59.46,22.12,47,8.19,41.39,2,40.11,1.36,38.71,1.11,31.27-.21,28.11,10.18,8.05,29,4.27,32.56.19,36.14,1.14,39Z"/></g></g></svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="height: 200px;"></div>
-        </div>
-
-        <div class="container">
-          <div class="col-md-12" style="text-align:center; z-index: 3;"> 
-            <nav>
-                    <ul>
-                        <li><a style="color: #fff;" href="index.html"><p>Home</p></a></li>
-                        <li><a style="color: #fff" href="moe.html"><p>Moe</p></a></li>
-                        <li><a style="color: #fff;" href="https://www.instagram.com/moe_techtainment">Instagram</a></li>
-                        <li><a style="color: #fff" href="relative.html"><p>Relative</p></a></li>
-                      <li><a style="color: #fff;" href="tech.html"><p>Techtainment</p></a></li>
-                    </ul>
-            </nav>
-           <div class="row" style="height:30px;"></div> 
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+      
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <img src="images/moeicon.png" height="20px" alt="Mouminatou, Moe Techtainment"/> 
+        </a>
+      </div>
     </div>
-        </div>
+    <!-- /.container -->
+  </nav>
+
+      <!--Intro-->
+        <header class="intro">
+          <div class="intro-body">
+            <div class="container">
+                <div class="container">
+                        <div class="row col-12" style="height:10px;"> 
+                        <div class="col-6"><h4 style="color:#000;">Mouminatou Barry</h4></div>
+                        <div class="col-6"><h4 style="color:#000;">Moe Techtainment</h4></div>
+                        </div>
+                </div>
+            </div>
+          </div>
+        </header>
+          <!-- Header-->
+        <section class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <div style="background-color: rgba(0,0,0,0.3);">
+                <img src="images/MOeTechLogow.png" height="200px" alt="Mouminatou, Moe Techtainment"/> 
+                <h1 style="font-size:20px;" class="brand-heading">Let's get Smarter, One Synapse at a Time !</h1>
+                <div style="height: 60px;"></div>
+                </div>
+
+                <div class="col-md-12 list-inline" style="text-align:center; z-index: 3;">
+
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://www.google.com/search?q=mouminatou+barry"><h2 class="strokep">Moe</h2><a href="moe.html"><img class="floating" height="50px" src="images/moeabout.png"></a></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/moe_techtainment"><h2 class="stroke"> Support</h2><a href="https://www.paypal.me/moetech"> <img class="floating" height="50px" src="images/moedonate.png"></a>
+                   </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/successfulentrepreneur13"><h2 class="strokeg">Relativity </h2><a href="relative.html"> <img class="floating" height="50px" src="images/moerelative.png"></a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/moetechtainment"><h2 class="strokeb">Techtainment</h2><a href="tech.html"><img class="floating" height="50px" src="images/moetech.png"></a>
+                    </li>
+                  </ul>  
+                  <div class="row" style="height: 50px;"></div>
+              
+                </div>
+            </div>
+            </div>
+          </section>    
+       <!-- Brain -->
+
+       <div class="container">
+        <div class="row" style="height: 50px;"></div>
+
+        <div class="tdc-main">
+          <div class="tdc-main-left">
+              <div class="tdc-main-left-wrapper">
+                  <div class="tdc-main-left-wrapper-info">
+                      <div class="tdc-info-title">Let's Learn about our Brains! <h5>Click on the lobes to find out more</h5></div>
+                      <br>
+                      <div class="tdc-info-description"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="tdc-main-right">
+              <div class="tdc-main-right-filter"></div>
+              <div class="tdc-main-right-demo">
+                  <div class="tdc-main-right-demo-brain">
+                      <div class="tdc-brain-part tdc-frontal-lobe">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263.36 316.37"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>frontal-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M1.27,192.38c1.08-11.44,4.95-19.83,12.68-36.62A365.14,365.14,0,0,1,32.26,122c1.61-2.63,9.21-15.05,16.9-25.35,24.44-32.73,55.69-52,60.56-54.93,26.78-16.18,50.73-22.39,67.61-26.76,4.64-1.2,12.27-2.39,26.76-5.63,11.63-2.6,17.4-4.09,26.76-5.63,17.17-2.83,25.83-4.16,29.58,0,2.74,3,2.84,8.11-1.41,22.54-7.65,25.95-13.47,28.1-16.9,42.25-5.61,23.14,7.46,27.75,1.41,52.11-4.11,16.57-10.23,14.72-14.08,32.39-4.51,20.66,2.24,30.59-5.63,39.44-5.88,6.6-12.89,4.73-25.35,8.45-22.61,6.74-36.27,23.85-40.85,29.58-21.05,26.36-9.69,48-33.8,70.42-3.76,3.49-8.84,8.11-16.9,11.27-23.36,9.14-50.45-2.41-66.2-15.49-16.14-13.4-22-31.94-33.8-69C1.47,210.48.4,201.55,1.27,192.38Z"/></g></g></svg>
+                      </div>
+                      <div class="tdc-brain-part tdc-cerebellum">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.25 161.76"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>cerebellum</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M113.8,157.91c12.66-4.17,35.25-16.66,59.15-46.48,24.13-30.11,32.25-56.24,35.21-67.61,4-15.51,8.74-27.87.68-35.57C202.42,2.13,191.69-1.46,164.5,3c-19.42,3.17-23.72,6.37-36.62,0-9.8-4.84-18.54,4.8-28.17,8.45-25.49,9.68-16.73,7.29-38,16.9-15.87,7.16-20.89,3.28-38,.86-6-.85-17.25,6.69-22,14.49-2.83,4.63,4,6.31,13.56,15.64,10.35,10.05,14.64,21.33,18.31,31,7.08,18.63,2.81,23,8.45,35.21,8.2,17.75,24.74,25.66,29.58,28.17,5.1,2.65,13,6.65,23.94,7A50.93,50.93,0,0,0,113.8,157.91Z"/></g></g></svg>
+                      </div>
+                      <div class="tdc-brain-part tdc-occipital-lobe">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.75 162.7"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>occipital-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M28.08,150.3c7.67-2,12.21,1.73,21.13,4.23,20.93,5.86,26-6.07,53.52-4.23,20.17,1.35,23.56,8.16,35.21,4.23,12.82-4.33,19.57-16.23,23.94-23.94,9.56-16.84,9.73-33,9.86-45.07a121,121,0,0,0-7-42.25C160.84,32.67,150.78.61,137.94,1c-5.69.17-11.33,6.67-12.68,12.68-1.67,7.45,4.07,10.52,4.23,18.31.13,6.41-3.64,9.38-21.13,28.17C88.12,81.91,89.29,82.11,83,86.92c-8.35,6.39-12.33,7.5-16.9,14.08-6.33,9.11-4.26,15-8.45,21.13-6.29,9.23-17.31,1.73-38,9.86-8.06,3.16-16.6,6.65-18.31,14.08-1.44,6.25,2.18,14.33,7,15.49C14.3,163,17.55,153,28.08,150.3Z"/></g></g></svg>
+                      </div>
+                      <div class="tdc-brain-part tdc-parietal-lobe">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257.5 215.34"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>parietal-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M32.14,3c3.32-4.53,11.53-.24,33.8,1.41C81.54,5.58,85,4,94.12,7.24c7.68,2.71,8.41,4.94,16.9,8.45,10.63,4.39,16.22,3.67,26.76,5.63a119.7,119.7,0,0,1,40.85,16.9c9.49,6.35,7.31,7.28,25.35,22.54C219.67,74,221.62,73.57,232.14,83.3c13,12.06,27,24.92,23.94,35.21a12.91,12.91,0,0,1-.66,1.67c-3.92,8.79-10.77,9-13.42,13.82-3.89,7,6.89,13.83,4.23,23.94-1.24,4.7-4.09,5.44-14.08,14.08A265.16,265.16,0,0,0,208.2,196c-10.74,12.43-12.22,17.65-18.31,18.31s-7.11-4.24-16.9-7c-9.21-2.63-17.38-.89-28.17,1.41-14.05,3-14.68,6-22.54,5.63-10.5-.53-18-6.37-22.54-9.86-5.35-4.15-16-12.38-15.49-22.54.09-1.87,1.94-6,5.63-14.08,5.21-11.45,6.73-13.47,5.63-15.49-2.29-4.25-13.1-3.11-19.72-1.41-11.06,2.84-11.6,7.53-23.94,12.68-4.92,2-11.73,3.24-25.35,5.63-21.13,3.71-23,2.39-23.94,1.41-4.43-4.86,1.38-17.38,7-29.58,5.76-12.41,8.88-14.31,11.27-22.54,3.33-11.47.89-22.23,0-26.76-2.46-12.49-6-12.52-5.63-19.72C15.73,61.36,23.46,61,29.33,45.27a60.81,60.81,0,0,0,4.23-26.76C32.77,9,29.94,6,32.14,3Z"/></g></g></svg>
+                      </div>
+                      <div class="tdc-brain-part tdc-temporal-lobe">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287.49 189.89"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>temporal-lobe</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M1.11,140c1-7.82,8.46-7.87,16.9-19.72,5.3-7.43,4.49-10.38,12.68-33.8C36.09,71,38.8,63.26,40.54,61.12,51.26,47.95,63.39,54.13,87,40c14-8.4,10.25-10.88,23.94-18.31C114,20,122.33,15.74,154.63,7.6,169,4,175-1.16,178.57,2c4.19,3.63-1.85,10.92,1.41,21.13,4,12.49,18.43,18.49,28.17,22.54,7.21,3,16.44,6.83,28.17,5.63,14.42-1.47,18.71-9.11,33.8-8.45,4.64.2,12.83.56,15.49,5.63,3.1,5.91-2.4,16.14-9.86,19.72-5.77,2.77-9.19-.12-16.9,0-16.57.26-34.76,14.13-36.62,28.17C221,105.45,227.58,108,225,114.64c-5,13.15-35.37,14-39.44,14.08-12.9.35-14.25-2.39-21.13,0-8.52,3-9.51,8.24-23.94,23.94A184.6,184.6,0,0,1,118,173.8c-9.73,7.54-15.42,12-23.94,14.08-8.91,2.22-15.92.57-29.58-2.82-17.22-4.27-33-8.2-47.89-21.13C9.48,157.73-.12,149.37,1.11,140Z"/></g></g></svg>
+                      </div>
+                      <div class="tdc-brain-part tdc-brain-stem">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.11 242.51"><defs><style>.cls-1{stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>brain-stem</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M1.14,39c1.11,3.32,7.64,1.49,14,6.24,5.7,4.23,7.64,11,9,15.62,2.44,8.46.11,10.6,2.75,17.69.64,1.71,2.38,5.9,9,13a97.43,97.43,0,0,0,20,16.11c11.14,7.14,19.87,20.74,37.34,47.95,8.16,12.71,13.92,23.27,17.29,29.48,7.46,13.72,11.18,20.59,14.15,27.82,6.37,15.56,5.69,20.13,11.4,24.45,7.51,5.68,17.36,4.32,25.94,3.14,10-1.38,27.39-3.77,33.41-14.93s-6.14-19.19-22-61.31c-8.86-23.52-10.66-35.95-22.8-42.05-7.49-3.77-9.76-.52-23.19-3.93-6.06-1.54-22.74-6-36.94-20.83-3.86-4-15.87-17.52-18.86-37.34-1.2-7.92.56-6.8-.79-13.76C68.11,31.75,59.46,22.12,47,8.19,41.39,2,40.11,1.36,38.71,1.11,31.27-.21,28.11,10.18,8.05,29,4.27,32.56.19,36.14,1.14,39Z"/></g></g></svg>
+                      </div>
+                  </div>
+              </div>
+          </div>
+           <div class="row" style="height:200px;"></div>
+  </div>
+          </div>
+       
+      <!-- Footer --> 
+      <div class="container col-md-12 text-center" style="background-color: rgba(0,0,0,0.6);">  
+          <section>    
+            <div class="col-md-12" style="text-align:center; z-index: 3;"> 
+              <!-- <div class="row" style="height:50px;"></div> -->
+              <nav>
+                <ul>
+                  <li><a style="color: #fff;" href="index.html">Home</a></li> 
+                  <li><a style="color: #fff" href="moe.html">Moe</a></li>
+                  <li><a style="color: #fff;" href="https://www.instagram.com/moe_techtainment">Instagram</a></li>
+                  <li><a style="color: #fff" href="relative.html">Relative</a></li>
+                  <li><a style="color: #fff;" href="tech.html">Techtainment</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <!-- Footer -->
+        <footer>
+            <div class="row" style="height:50px;"></div>
+            <br><h2 style="color:#ffffff; font-size: 15px;"> Influencer</h2> 
+            <img class="floating" height="30px" src="images/hand.png"> <br><br>
+            <ul class="list-inline">
+              <li>
+               <a href="https://www.google.com/search?q=mouminatou+barry" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i></a>
+             </li>
+              <li>
+               <a href="https://www.instagram.com/moe_techtainment" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i></a>
+             </li>
+             <li>
+               <a href="https://www.linkedin.com/in/successfulentrepreneur13" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i></a>
+             </li>
+             <li>
+             <a href="https://twitter.com/moetechtainment" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i></a>
+             </li>
+             <li>
+             <a href="https://www.youtube.com/channel/UCZL_2jz2gFnVJoPPF8DfLmQ" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i></a>
+             </li>
+           </ul>
+           <br>
+            <div style="text-align: center;"></br>
+              <h5> Moe Techtainment aims to promote <br>Cognitive & Experimental <br>learning in order to strengthen our</h5>   <h5 class="strokeb">Synapses</h5> 
+              <br> 
+              <h5>Thank you for visiting, if you have any questions or want to collaborate please feel free to email me </h5>
+              <h5><a href="mailto:moetechtainment@gmail.com">moetechtainment@gmail.com</a></h5>
+            </div>
+            <p>Copyright &copy; Moe Techtainment LLC 2020</p>
+          </div>
+        </footer>
+    </body>
+      
 <!-- JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script>
+<script type="text/javascript">
 let SELECTORS = {
     frontal_lobe: '.tdc-frontal-lobe',
     cerebellum: '.tdc-cerebellum',
@@ -481,5 +558,8 @@ _.each(info.brain, (part, k) => {
     );
 });
 </script>
+
 </body>
 </html>
+
+

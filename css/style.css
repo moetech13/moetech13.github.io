@@ -108,7 +108,7 @@ a {
 /* moving Table */
 .Marquee {
   background: linear-gradient(-135deg, #008ed9, #8b00db);
-  width: 90vw;
+  width: 100%;
   height:160px;
   box-sizing: border-box;
   padding: 1em;
