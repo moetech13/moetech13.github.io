@@ -1,0 +1,606 @@
+<!Doctype html>
+<html>
+<head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146899361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-146899361-1');
+</script>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="index,follow"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="Mouminatou, Moe Techtainment,HTML,CSS,Cognitive,JavaScript, Physics, Barry,Leader, STEM,STEAM"/>
+    <meta name="description" content=" Numbers & Nature, Nature & Numbers ! Oh My ! Relativity is ALL around us, Dive in from Quantum Mechanics to M-Theory. Let's get Smarter, One Synapse at a Time; using Cognitive & Experimental Learning (Science, Tech, Engineering, Arts, Math)"/>
+    <meta name="author" content="Mouminatou Barry, Moe Techtainment"/>
+    <title>Moe Techtainment</title>
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="images/TransLogo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="science,stem,steam, Mouminatou, united nation,leader" >
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Atma|Coiny|Handlee|Rum+Raisin&display=swap" rel="stylesheet">
+    <!-- FaFa -->
+    <script src="https://use.fontawesome.com/e13b691fb7.js"></script>
+    <!-- query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <style>
+
+  h1,  h2{
+  font-family: 'Rum Raisin', sans-serif;
+    color: #fff;
+    font-size: 18px;
+  }
+  h3{
+	font-family: 'Arima Madurai', cursive;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+  h5{
+    font-family: 'Atma', cursive;
+    color: #fff;
+    font-size: 18px;
+  }
+  h6{
+    font-family: 'Roboto', sans-serif;
+  }
+  p{
+    font-family: 'Handlee', cursive;
+  }
+  /*  */
+.et-hero-tabs,
+.et-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+  background: rgba(103, 179, 27, 0.3);
+}
+.et-hero-tabs h1,
+.et-slide h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 1rem;
+  /* line-height: 50px; */
+}
+.et-hero-tabs h3,
+.et-slide h3 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.8;
+}
+
+.et-hero-tabs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background:#000;
+  z-index: 10;
+}
+.et-hero-tabs-container--top {
+  position: fixed;
+  top: 0;
+}
+
+.et-hero-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.et-hero-tab:hover {
+  color: white;
+  background: rgba(103, 179, 27, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #66B1F1;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+/*  */
+a {
+    color: #0092b3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #67b31b;
+}
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #1a99de;
+    color: #ffc600;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #1a99de;
+    outline: 0;
+    color: #000;
+    background-color: #ffc600;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*  */
+  </style>
+</head>
+<div class="particle-network-animation"></div>
+<body style="background-color:#000;" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="container" style="background-color: rgba(0,0,0,0.8);">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#page-top">
+              <img src="images/moeicon.png" height="20px" alt="Mouminatou, Moe Techtainment"/> 
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--Intro-->
+        <header class="intro">
+          <div class="intro-body">
+            <div class="container">
+                <div class="container">
+                        <div class="row col-12" style="height:10px;"> 
+                        <div class="col-6"><h4 style="color:#000;">Mouminatou Barry</h4></div>
+                        <div class="col-6"><h4 style="color:#000;">Moe Techtainment</h4></div>
+                        </div>
+                </div>
+            </div>
+          </div>
+        </header>
+          <!-- Header-->
+        <section class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <div >
+                <img src="images/MOeTechLogow.png" height="200px" alt="Mouminatou, Moe Techtainment"/> 
+                <h1 style="font-size:20px;" class="brand-heading">Let's get Smarter, One Synapse at a Time !</h1>
+                <div style="height: 60px;"></div>
+                </div>
+
+                <div class="col-md-12 list-inline" style="text-align:center; z-index: 3;">
+
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://www.google.com/search?q=mouminatou+barry"><h2 class="strokep">Moe</h2><a href="moe.html"><img class="floating" height="50px" src="images/moeabout.png"></a></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/moe_techtainment"><h2 class="stroke"> Support</h2><a href="https://www.paypal.me/moetech"> <img class="floating" height="50px" src="images/moedonate.png"></a>
+                   </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/successfulentrepreneur13"><h2 class="strokeg">Relativity </h2><a href="relative.html"> <img class="floating" height="50px" src="images/moerelative.png"></a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/moetechtainment"><h2 class="strokeb">Techtainment</h2><a href="tech.html"><img class="floating" height="50px" src="images/moetech.png"></a>
+                    </li>
+                  </ul>  
+                  <div class="row" style="height: 50px;"></div>
+              
+                </div>
+            </div>
+            </div>
+            <!-- main -->
+            <section> 
+              <div class="row" style="background-color: rgba(0,0,0,0.5);">
+                <div class="container" >
+                  <div class="skill-card">
+                    <header class="skill-card__header" style="background-color: #67b31b;">  <img src="images/time.gif" height="180px;"> 
+                    </header>
+                    <section class="skill-card__body">
+                      <h2 class="skill-card__title">Relative Reality</h2><span class="skill-card__duration"><br><br>As Above, So within, from the Golden Ratio, to Self-Similarities & on. Our Universe although choatic- works in perfect harmony from cosmic to molecular structures.  </span>  
+                    </section>
+                  </div>
+                </div>
+              </div> 
+            </section>
+          </section>    
+          <!-- Brain-->
+  
+          <div class="container" style="height: 300px;">
+            <div class="container">
+              <a href="https://twitter.com/moetechtainment"><h2 class="strokeb">Encoding</h2><a href="tech.html"><img class="floating" height="100px" src="images/moeticon.png"></a>
+
+            </div>
+          </div>
+
+       <!-- Tabs -->
+       <section class="et-hero-tabs">
+        <div class="container">
+        <h1></h1>
+        <h3>Moe Techtainment helps people understand the relationship between S.T.E.A.M and Reality <br><br>by using Cognitive and Experimental Learning.<br> <br>Let's enlighten ourself's about the world around us, while gaining transferable skills to help make learning more<br> <br>Creative, Fun & Understandable.</h3>
+       </div>
+        <div class="et-hero-tabs-container">
+          <a class="et-hero-tab" href="#tab-mission"><h2>Mission</h2></a>
+          <a class="et-hero-tab" href="#tab-creative"><h2>Creativity</h2></a>
+          <a class="et-hero-tab" href="#tab-mid"><img class="floating" src="images/techbrain.png" height="30px"></a>
+          <a class="et-hero-tab" href="#tab-steam"><h2>STEAM</h2></a>
+          <a class="et-hero-tab" href="#tab-pedagogy"><h2>Pedagogy</h2></a>
+          <span class="et-hero-tab-slider"></span>
+        </div>
+      </section>
+      <!--Nature & Numbers-->
+
+<!-- MAINMAIN -->
+             
+  <main class="et-main">
+     <!--1-->
+     <section class="et-slide" id="tab-mission">
+ 
+    </section>
+    <!-- 2 -->
+    <section class="et-slide" id="tab-creative">
+      
+  <br><br><br>
+  <div class="container">
+    <div class="row col-md-12">
+          <div class="Marquee" style="height:200px; width: 350px; background: transparent; align-content: center;">
+            <div class="Marquee-content" style="height: 200px;">
+            <div class="Marquee-tag">
+            <div><h5>Click through <br>to find out how</h5></div>
+            </div>
+            <!-- C -->
+            <div class="Marquee-tag"> 
+            <figure class="snip1446">
+            <img src="images/moecogni.png"/>
+            <figcaption>
+            <p>Using our Senses, has always been a benefit for us. Now it's time to translate them into skills</p></span>
+            </figcaption>
+            </figure>  
+            </div>
+            <!-- C -->
+            <div class="Marquee-tag">
+            <figure class="snip1446">
+            <img src="images/cre.png"/>
+            <figcaption>
+            <p>Imagination allows our neurons to make new pathways, using nmemonics and patterns allows our connections to be atleast twice as fast</p></span>
+            </figcaption>
+            </figure>
+            </div>
+            <!-- T -->
+            <div class="Marquee-tag">         
+            <figure class="snip1446">
+            <img src="images/trans.png"/>
+            <figcaption> 
+            <p> In the new era of technology, it's imperative people are able to get quality education that is transferable into careers. We make the market !</p></span>
+            </figcaption>
+            </figure>
+            </div>
+            <!--  -->
+            <div class="Marquee-tag">
+            <div class="row"><h5>Let's strengthen our<br>Synapses <br> together</h5></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    </section>
+    <!-- 3 -->
+    <section class="et-slide" id="tab-mid">
+      <div class="container">
+        <h2>Cognitive & Experimental Learning</h2><br> 
+    
+        <div class="container"><h5>Click Through <br>to find out how</h5>
+          <img src="images/tiers.gif" height="300px" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">      
+            <!-- Pop Up -->
+          <div id="modal02" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+              <img id="img02" style="max-width:100%" >
+            </div>
+          </div>
+        </div>
+
+      <div class="Marquee" style="height:200px; width:350px; background:transparent;">
+        <div class="Marquee-content" style="height: 200px;">
+          <div class="Marquee-tag"></div>
+          <div class="Marquee-tag"><img src="images/tier1.gif" height="190px" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">    
+          </div>
+          <div class="Marquee-tag"><img src="images/tier2.gif" height="190px" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">    
+          </div>
+          <div class="Marquee-tag"><img src="images/tier3.gif" height="190px" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity">    
+          </div>
+          <div class="Marquee-tag">
+            <div><h5>Click through <br>to find out how</h5></div>
+          </div>
+        </div>
+    </div>
+  </div>
+    </section>
+    <section class="et-slide" id="tab-steam">
+      <div class="container"> 
+        <h2>Relativity</h2><br>
+        <h3>The relationship between two things</h3>
+        <h3>At Moe Techtainment, we find relationships between Numbers & our everyday lives so learning could be just a little easier. <br> Sports, Music, Gaming... It all has to do with Numbers! Let find out how.</h3>
+<!--  -->     
+          <div class="container" >
+            <h3 style="color:#fff; opacity: 1; "> Cirriculum Season 1</h3>
+          <div> 
+           <img src="images/cirric.png" alt="Mouminatou" onclick="onClick(this)" class="modal-hover-opacity"> 
+          </div> 
+
+           <div style="height: 50px;"></div>
+          </div>
+
+                
+
+  <!-- carousel -->
+  <div class="container"> 
+    <!-- PRESS -->
+    <div class="row">  
+     <div class="col-md-12">
+     <div class="row" style="height:50px;"></div>
+       <div class="Marquee" >
+           <div class="Marquee-content">
+                 <!-- S -->
+             <div class="Marquee-tag">
+               
+             </div>
+            <!-- T-->
+             <div class="Marquee-tag"> 
+            
+            </div>
+            <!-- E -->
+             <div class="Marquee-tag">
+              
+            </div>
+            <!-- A -->
+             <div class="Marquee-tag">
+            
+              </div>
+              <!-- M -->
+             <div class="Marquee-tag">
+           
+             </div>
+             <!--  -->
+             <div class="Marquee-tag"><img src="images/moeicon.png" height="100px"></div>
+           </div>
+       </div>
+     </div>
+     </div>
+</div>
+<div class="row" style="height:50px;"></div>
+    </div>
+    </section>
+    <!-- 4 -->
+    <section class="et-slide" id="tab-pedagogy">
+
+    </section>
+  </main>
+
+
+
+       
+      <!-- Footer --> 
+      <div class="container col-md-12 text-center" style="background-color: rgba(0,0,0,0.6);">  
+          <section>    
+            <div class="col-md-12" style="text-align:center; z-index: 3;"> 
+              <!-- <div class="row" style="height:50px;"></div> -->
+              <nav>
+                <ul>
+                  <li><a style="color: #fff;" href="index.html">Home</a></li> 
+                  <li><a style="color: #fff" href="moe.html">Moe</a></li>
+                  <li><a style="color: #fff;" href="https://www.instagram.com/moe_techtainment">Instagram</a></li>
+                  <li><a style="color: #fff" href="relative.html">Relative</a></li>
+                  <li><a style="color: #fff;" href="tech.html">Techtainment</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <!-- Footer -->
+        <footer>
+            <div class="row" style="height:50px;"></div>
+            <br><h2 style="color:#ffffff; font-size: 15px;"> Influencer</h2> 
+            <img class="floating" height="30px" src="images/hand.png"> <br><br>
+            <ul class="list-inline">
+              <li>
+               <a href="https://www.google.com/search?q=mouminatou+barry" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i></a>
+             </li>
+              <li>
+               <a href="https://www.instagram.com/moe_techtainment" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i></a>
+             </li>
+             <li>
+               <a href="https://www.linkedin.com/in/successfulentrepreneur13" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i></a>
+             </li>
+             <li>
+             <a href="https://twitter.com/moetechtainment" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i></a>
+             </li>
+             <li>
+             <a href="https://www.youtube.com/channel/UCZL_2jz2gFnVJoPPF8DfLmQ" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i></a>
+             </li>
+           </ul>
+           <br>
+            <div style="text-align: center;"></br>
+              <h5> Moe Techtainment aims to promote <br>Cognitive & Experimental <br>learning in order to strengthen our</h5>   <h5 class="strokeb">Synapses</h5> 
+              <br> 
+              <h5>Thank you for visiting, if you have any questions or want to collaborate please feel free to email me </h5>
+              <h5><a href="mailto:moetechtainment@gmail.com">moetechtainment@gmail.com</a></h5>
+            </div>
+            <p>Copyright &copy; Moe Techtainment LLC 2020</p>
+          </div>
+        </footer>
+    </body>
+      
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript">
+// Get the modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+// tabs
+class StickyNavigation {
+	
+	constructor() {
+		this.currentId = null;
+		this.currentTab = null;
+		this.tabContainerHeight = 70;
+		let self = this;
+		$('.et-hero-tab').click(function() { 
+			self.onTabClick(event, $(this)); 
+		});
+		$(window).scroll(() => { this.onScroll(); });
+		$(window).resize(() => { this.onResize(); });
+	}
+	
+	onTabClick(event, element) {
+		event.preventDefault();
+		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		$('html, body').animate({ scrollTop: scrollTop }, 600);
+	}
+	
+	onScroll() {
+		this.checkTabContainerPosition();
+    this.findCurrentTabSelector();
+	}
+	
+	onResize() {
+		if(this.currentId) {
+			this.setSliderCss();
+		}
+	}
+	
+	checkTabContainerPosition() {
+		let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
+		if($(window).scrollTop() > offset) {
+			$('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
+		} 
+		else {
+			$('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+		}
+	}
+	
+	findCurrentTabSelector(element) {
+		let newCurrentId;
+		let newCurrentTab;
+		let self = this;
+		$('.et-hero-tab').each(function() {
+			let id = $(this).attr('href');
+			let offsetTop = $(id).offset().top - self.tabContainerHeight;
+			let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+			if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+				newCurrentId = id;
+				newCurrentTab = $(this);
+			}
+		});
+		if(this.currentId != newCurrentId || this.currentId === null) {
+			this.currentId = newCurrentId;
+			this.currentTab = newCurrentTab;
+			this.setSliderCss();
+		}
+	}
+	
+	setSliderCss() {
+		let width = 0;
+		let left = 0;
+		if(this.currentTab) {
+			width = this.currentTab.css('width');
+			left = this.currentTab.offset().left;
+		}
+		$('.et-hero-tab-slider').css('width', width);
+		$('.et-hero-tab-slider').css('left', left);
+	}
+	
+}
+
+new StickyNavigation();
+// 
+$('.carousel').carousel();
+// 
+$(document).ready(function() { 
+
+});
+
+</script>  
+</body>
+</html>
+
+
