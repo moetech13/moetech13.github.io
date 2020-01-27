@@ -660,7 +660,7 @@ nav li:last-child a:after
   .skill-card .skill-card__body .skill-card__duration {
   color: #fff;
   font-family: 'Atma', cursive;
-  font-size: 10px;
+  font-size: 16px;
   }
   .skill-card .skill-card__body .skill-card__knowledge {
 	margin-top: 10px;
@@ -686,7 +686,6 @@ nav li:last-child a:after
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    left: 3%;
   }
   .snip1446 * {
     -webkit-box-sizing: border-box;
